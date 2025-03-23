@@ -2,8 +2,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { MdLocalPhone } from "react-icons/md";
-import GoogleTranslate from "./GoogleTranslate"; // Update the path as necessary
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
@@ -28,21 +26,52 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="absolute top-0 inset-0 h-24 flex items-center bg-white z-50 border shadow-lg xl:w-full">
-      <div className="mx-auto lg:max-w-7xl w-full px-8 md:px-12 lg:px-12 h-full items-center">
+    <header className="fixed text-white top-0 left-0 right-0 h-24 flex items-center bg-black z-50 w-full shadow-sm">
+      <div className="mx-auto lg:max-w-7xl w-full px-8 md:px-12 lg:px-12 h-full">
         <nav className="flex justify-between items-center h-full">
-          <Logo />
+          {/* Logo on the left */}
+          <div className="flex-shrink-0">
+            <Logo />
+          </div>
 
+          {/* Desktop navigation - everything on the right */}
+          <div className="hidden lg:flex lg:items-center lg:justify-end lg:flex-1">
+            <ul className="flex items-center space-x-8 mr-8">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      "transition ease-linear hover:text-primary text-base font-medium",
+                      pathname === link.href && "text-primary font-semibold"
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link href="#">
+              <Button
+                className="text-white bg-primary hover:opacity-90"
+                aria-label="Contact us"
+              >
+                Contact Us
+              </Button>
+            </Link>
+          </div>
+
+          {/* Mobile navigation */}
           <div
             className={cn(
-              "flex flex-col space-y-10 inset-0 fixed top-0 h-[100dvh] bg-white dark:bg-gray-950 lg:!bg-transparent py-20 px-4 md:px-8 2xl:px-16",
-              "transition-all ease-linear duration-300 lg:flex-row lg:flex-1 lg:py-0 lg:px-0 lg:space-y-0 lg:gap-x-10 lg:relative lg:top-0 lg:h-full lg:items-center lg:justify-between lg:w-max",
+              "flex flex-col space-y-10 inset-0 fixed top-0 h-[100dvh] bg-black dark:bg-gray-950 lg:hidden py-20 px-4 md:px-8 2xl:px-16",
+              "transition-all ease-linear duration-300",
               openNavbar
                 ? "visible opacity-100 translate-y-0"
-                : "-translate-y-9 opacity-0 invisible lg:translate-y-0 lg:visible lg:opacity-100"
+                : "-translate-y-9 opacity-0 invisible"
             )}
           >
-            <ul className="flex flex-col gap-y-5 lg:items-center lg:flex-row lg:gap-x-5 lg:h-full lg:justify-center lg:flex-1">
+            <ul className="flex flex-col gap-y-5">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -58,22 +87,18 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <GoogleTranslate />
-            <Link
-              href="tel:++916369857591"
-              className="inline-block"
-              onClick={closeNavbar}
-            >
+            <Link href="#" onClick={closeNavbar}>
               <Button
-                className="divide-x divide-black bg-muted text-blac flex items-center p-2 hover:bg-emerald- hover:text-white transition"
-                aria-label="Contact us by phone"
+                className="text-white bg-primary hover:opacity-90"
+                aria-label="Contact us"
               >
-                <MdLocalPhone className="ml-2 text-lg" aria-hidden="true" />
-                <span className="px-2">Contact Us</span>
+                Contact Us
               </Button>
             </Link>
           </div>
-          <div className="flex items-center justify-end relative z-60 lg:hidden">
+
+          {/* Mobile menu button */}
+          <div className="flex items-center justify-end lg:hidden">
             <button
               onClick={toggleNavbar}
               className="p-3 rounded-full outline-none w-12 aspect-square flex flex-col relative justify-center items-center"
@@ -81,19 +106,19 @@ const Navbar = () => {
               <span className="sr-only">toggle navbar</span>
               <span
                 className={cn(
-                  "w-6 h-0.5 rounded-full bg-black transition-transform duration-300 ease-linear",
+                  "w-6 h-0.5 rounded-full bg-white transition-transform duration-300 ease-linear",
                   openNavbar ? "translate-y-1.5 rotate-[40deg]" : ""
                 )}
               />
               <span
                 className={cn(
-                  "w-6 origin-center mt-1 h-0.5 rounded-full bg-black transition-all duration-300 ease-linear",
+                  "w-6 origin-center mt-1 h-0.5 rounded-full bg-white transition-all duration-300 ease-linear",
                   openNavbar ? "scale-x-0 opacity-0" : ""
                 )}
               />
               <span
                 className={cn(
-                  "w-6 mt-1 h-0.5 rounded-full bg-black transition-all duration-300 ease-linear",
+                  "w-6 mt-1 h-0.5 rounded-full bg-white transition-all duration-300 ease-linear",
                   openNavbar ? "-translate-y-1.5 -rotate-[40deg]" : ""
                 )}
               />
