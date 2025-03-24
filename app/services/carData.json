@@ -1,0 +1,138 @@
+{
+  "categories": [
+    {
+      "title": "Sedan",
+      "value": "sedan",
+      "vehicles": [
+        {
+          "id": "sedan1",
+          "title": "Swift Dzire",
+          "description": "Efficient and reliable compact sedan with excellent fuel economy and modern features.",
+          "image": "/swiftdzire.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "sedan2",
+          "title": "Toyota Etios",
+          "description": "Midsize sedan with spacious interior, smooth ride, and advanced safety features.",
+          "image": "/etios.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SUV",
+      "value": "suv",
+      "vehicles": [
+        {
+          "id": "suv1",
+          "title": "Toyota Innova",
+          "description": "Compact SUV with versatile cargo space, all-wheel drive option, and rugged styling.",
+          "image": "/innova1.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "suv2",
+          "title": "Toyota Innova Crysta",
+          "description": "Family-friendly SUV with spacious interior, excellent safety ratings, and efficient engine.",
+          "image": "/crysta1.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Luxury",
+      "value": "luxury",
+      "vehicles": [
+        {
+          "id": "luxury1",
+          "title": "Toyota Innova Hycross",
+          "description": "Flagship luxury sedan with cutting-edge technology, supreme comfort, and exceptional performance.",
+          "image": "/hycross.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "luxury2",
+          "title": "Maharaja 8 seater",
+          "description": "Executive sedan combining driving dynamics with innovative features and plush amenities.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "luxury3",
+          "title": "Maharaja 10 seater",
+          "description": "Sophisticated luxury sedan with all-wheel drive, refined interior, and advanced driver assistance.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vans",
+      "value": "vans",
+      "vehicles": [
+        {
+          "id": "van1",
+          "title": "Tourister 12 Seater",
+          "description": "Family minivan with flexible seating, convenient features, and smooth driving experience.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "van2",
+          "title": "Tourister 14 Seater",
+          "description": "Hybrid minivan with excellent fuel economy, available all-wheel drive, and spacious interior.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "van3",
+          "title": "Tourister 17 Seater",
+          "description": "Feature-rich minivan with Stow 'n Go seating, premium amenities, and modern technology.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "van4",
+          "title": "Tourister 18 Seater",
+          "description": "Feature-rich minivan with Stow 'n Go seating, premium amenities, and modern technology.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "View Details", "type": "primary" },
+            { "text": "Book Test Drive", "type": "secondary" }
+          ]
+        }
+      ]
+    }
+  ]
+}

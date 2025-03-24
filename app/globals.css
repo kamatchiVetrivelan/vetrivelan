@@ -114,7 +114,7 @@
     @apply flex items-center justify-center;
   }
   .padding {
-    @apply mt-16 px-8 md:px-12 2xl:px-16;
+    @apply  px-8 md:px-12 2xl:px-16;
   }
   .aligned {
     @apply flex items-center justify-center;
@@ -156,3 +156,12 @@
   }
 }
 
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}

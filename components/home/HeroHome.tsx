@@ -10,8 +10,8 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <>
-      <section className="relative ">
-        <div className="mx-auto md:hidden pt-2 w-full  flex flex-col lg:flex-row gap-10 lg:gap-12">
+      <section className="relative pt-2 md:pt-16">
+        <div className="mx-auto md:hidden  w-full  flex flex-col lg:flex-row gap-10 lg:gap-12">
           <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
             <Image
               src="/carmobile.png"
@@ -57,7 +57,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="hidden md:block">
-          <div className="mx-auto pt-16  w-full  flex flex-col lg:flex-row gap-10 lg:gap-12">
+          <div className="mx-auto   w-full  flex flex-col lg:flex-row gap-10 lg:gap-12">
             <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 hidden lg:block">
               <span className="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl  blur-xl opacity-60 lg:opacity-95 lg:block hidden" />
               <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl  blur-xl opacity-80" />
