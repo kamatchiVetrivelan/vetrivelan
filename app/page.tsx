@@ -1,7 +1,6 @@
 
 import HeroSection from '@/components/home/HeroHome';
-import Image from 'next/image';
-import React from 'react'
+ import React from 'react'
 
 function HomePage() {
   return (
