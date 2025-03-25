@@ -4,6 +4,7 @@
 import { useState } from "react"
  import Link from "next/link"
  import InteractiveBentoGallery from "@/components/interactive-bento-gallery"
+import { TourTimeline } from "@/components/ui/timeline";
 
 interface TourDetailClientProps {
   tourData: {
@@ -59,9 +60,9 @@ export default function TourDetailClient({ tourData }: TourDetailClientProps) {
     <section className="md:padding container ">
     <div className=" mx-auto px-10 py-8 ">
        {/* Title and Description */}
-       <div className="mb-12">
+       <div className="mt-4 flex justify-center flex-col text-justify items-center ">
         <h1 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">{tourData.title}</h1>
-        <p className="text-lg text-gray-700 mb-6">{tourData.fullDescription}</p>
+        <p className="text-lg text-gray-700 flex justify-center  lg:max-w-6xl">{tourData.fullDescription}</p>
       </div>
   <div className="min-h-screen overflow-y-auto">
       <InteractiveBentoGallery
@@ -70,18 +71,10 @@ export default function TourDetailClient({ tourData }: TourDetailClientProps) {
        />
     </div>
         {/* Itinerary */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-bold text-blue-950 mb-6 pb-2 border-b">7-Day Itinerary</h2>
-        <div className="space-y-6">
-          {tourData.itinerary?.map((day, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold text-blue-950 mb-2">
-                {day.day}: {day.title}
-              </h3>
-              <p className="text-gray-700">{day.description}</p>
-            </div>
-          ))}
-        </div>
+   
+      <div>
+      {tourData.itinerary && <TourTimeline itinerary={tourData.itinerary} />}
+
       </div>
 
       {/* Exclusions */}

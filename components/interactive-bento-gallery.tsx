@@ -3,13 +3,14 @@ import type React from "react"
 import { useEffect, useRef, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
+import Image from "next/image"
 
 // MediaItemType defines the structure of a media item
 interface MediaItemType {
   id: number
   type: string
-  title: string
-  desc: string
+  title?: string
+  desc?: string
   url: string
   span: string
 }
@@ -127,9 +128,11 @@ const MediaItem = ({ item, className, onClick }: { item: MediaItemType; classNam
   }
 
   return (
-    <img
+    <Image
       src={item.url || "/placeholder.svg"} // Image source URL
-      alt={item.title} // Alt text for the image
+      width={500}
+      height={500}
+      alt={item.title || "Image"} // Alt text for the image
       className={`${className} object-cover cursor-pointer`} // Style the image
       onClick={onClick} // Trigger onClick when the image is clicked
       loading="lazy" // Lazy load the image for performance
@@ -238,8 +241,8 @@ const GalleryModal = ({ selectedItem, isOpen, onClose, setSelectedItem, mediaIte
         className="fixed z-50 left-1/2 bottom-4 -translate-x-1/2 touch-none"
       >
         <motion.div
-          className="relative rounded-xl bg-sky-400/20 backdrop-blur-xl 
-                             border border-blue-400/30 shadow-lg
+          className="relative rounded-xl bg-primary/40 backdrop-blur-xl 
+                             border border-sky-400/60 shadow-lg
                              cursor-grab active:cursor-grabbing"
         >
           <div className="flex items-center -space-x-2 px-3 py-2">
@@ -260,7 +263,7 @@ const GalleryModal = ({ selectedItem, isOpen, onClose, setSelectedItem, mediaIte
                                     cursor-pointer hover:z-20
                                     ${
                                       selectedItem.id === item.id
-                                        ? "ring-2 ring-white/70 shadow-lg"
+                                        ? "ring-2 ring-primary/90 shadow-lg"
                                         : "hover:ring-2 hover:ring-white/30"
                                     }
                                 `}
