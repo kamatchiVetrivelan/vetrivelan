@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <Container className="pt-24">
+        <Container className="">
           {children}
         </Container>
         <WhatsappLive/>

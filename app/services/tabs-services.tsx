@@ -89,7 +89,7 @@ const VehicleCard = ({ vehicle }: { vehicle: Vehicle }) => {
         />
       </div>
       <div className="p-3 md:p-4 flex flex-col flex-grow">
-        <h3 className="font-bold text-base md:text-lg mb-1 md:mb-2">
+        <h3 className="font-bold text-base md:text-lg mb-1 md:mb-2 text-transparent bg-clip-text bg-gradient-to-br from-purple-700 to-violet-900">
           {vehicle.title}
         </h3>
         <p className="text-xs md:text-sm mb-2 md:mb-4 flex-grow">
