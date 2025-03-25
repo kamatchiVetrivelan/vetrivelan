@@ -30,8 +30,11 @@ const Navbar = () => {
       <div className="mx-auto lg:max-w-7xl w-full px-8 md:px-12 lg:px-12 h-full">
         <nav className="flex justify-between items-center h-full">
           {/* Logo on the left */}
-          <div className="flex-shrink-0">
-            <Logo />
+          <div>
+            {" "}
+            <div className="">
+              <Logo />
+            </div>
           </div>
 
           {/* Desktop navigation - everything on the right */}
