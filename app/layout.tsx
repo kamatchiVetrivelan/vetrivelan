@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Container from "@/components/global/Container";
 import WhatsappLive from "@/components/WhatappLive";
+import { Toaster } from "@/components/ui/sonner"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,8 @@ export default function RootLayout({
         <Navbar />
         <Container className="">
           {children}
+          <Toaster />
+
         </Container>
         <WhatsappLive/>
       </body>
