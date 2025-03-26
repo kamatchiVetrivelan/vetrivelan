@@ -31,15 +31,15 @@ export const TourTimeline = ({ itinerary }: { itinerary: TimelineEntry[] }) => {
   return (
     <div className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-3xl mb-4 text-black dark:text-white max-w-4xl">Tour Itinerary</h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        <h2 className="text-xl font-bold md:text-3xl mb-4 text-blue-950 underline  dark:text-white max-w-4xl">Tour Itinerary</h2>
+        <p className="text-neutral-700 dark:text-neutral-300 text-md md:text-base max-w-sm">
           Follow the day-by-day journey of this amazing tour experience.
         </p>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {itinerary.map((item, index) => (
-          <div key={index} className="flex justify-start pt-10 md:pt-32 md:gap-10">
+          <div key={index} className="flex justify-start pt-10 md:pt- md:gap-10">
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
@@ -64,7 +64,7 @@ export const TourTimeline = ({ itinerary }: { itinerary: TimelineEntry[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
+          className="absolute md:left-8 left-8 top-0 md:overflow-y-auto overflow-hidden md:bg-red-200 w-[3px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
         >
           <motion.div
             style={{
