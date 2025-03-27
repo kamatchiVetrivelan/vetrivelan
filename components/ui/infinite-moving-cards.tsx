@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -14,6 +14,8 @@ export const InfiniteMovingCards = ({
   items: {
     quote: string;
     name: string;
+    avatar?: string;
+    role?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -26,7 +28,9 @@ export const InfiniteMovingCards = ({
   useEffect(() => {
     addAnimation();
   }, []);
+
   const [start, setStart] = useState(false);
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -43,21 +47,23 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "forwards",
+          "forwards"
         );
       } else {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "reverse",
+          "reverse"
         );
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -69,6 +75,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   return (
     <div
       ref={containerRef}
@@ -95,21 +102,28 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <div className="flex justify-center items-center gap-4 pb-4 text-sm leading-[1.6] font-semibold text-black dark:text-gray-400">
-                    <div>
-                      <Avatar>
-                        <AvatarImage src="https://github.com/shadcn.png" />
-                        <AvatarFallback>CN</AvatarFallback>
-                      </Avatar>
+                    {item.avatar && (
+                      <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                        <Image
+                          src={item.avatar}
+                          alt={`${item.name}'s avatar`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 48px, 48px"
+                        />
+                      </div>
+                    )}
+                    <div className="flex flex-col">
+                      <span>{item.name}</span>
+                     
                     </div>
-                    <div>{item.name}</div>
                   </div>
                 </span>
               </div>
-              <span className=" relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
+              <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
                 {item.quote}
               </span>
             </blockquote>

@@ -127,7 +127,7 @@ export default function TourHerosection() {
       {/* Feature Section */}
       {selectedPackage &&
         tourPackagesData[selectedPackage as keyof typeof tourPackagesData] && (
-          <section id="feature-section" className="py-16 bg-blue-950 rounded-t-3xl  padding  ">
+          <section id="feature-section" className="py-16 bg-black rounded-t-3xl  padding  ">
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-blue-50 mb-4">

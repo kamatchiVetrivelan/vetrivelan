@@ -1,0 +1,138 @@
+{
+  "categories": [
+    {
+      "title": "Sedan",
+      "value": "sedan",
+      "vehicles": [
+        {
+          "id": "sedan1",
+          "title": "Swift Dzire",
+          "description": "Perfect for a comfortable city ride for a small family.",
+          "image": "/swiftdzire.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "sedan2",
+          "title": "Toyota Etios",
+          "description": "Spacious interiors and reliable performance for a smooth journey.",
+          "image": "/etios.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SUV",
+      "value": "suv",
+      "vehicles": [
+        {
+          "id": "suv1",
+          "title": "Toyota Innova",
+          "description": "Ideal for family trips with ample space and ultimate comfort.",
+          "image": "/innova1.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "suv2",
+          "title": "Toyota Innova Crysta",
+          "description": "Premium luxury and powerful performance for long drives.",
+          "image": "/crysta1.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Luxury",
+      "value": "luxury",
+      "vehicles": [
+        {
+          "id": "luxury1",
+          "title": "Toyota Innova Hycross",
+          "description": "Unmatched luxury with cutting-edge technology and top-class comfort.",
+          "image": "/hycross.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "luxury2",
+          "title": "Maharaja 8 seater",
+          "description": "Travel like royalty with spacious seating and premium features.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "luxury3",
+          "title": "Maharaja 10 seater",
+          "description": "Elegant design and ultimate comfort for large groups and families.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vans",
+      "value": "vans",
+      "vehicles": [
+        {
+          "id": "van1",
+          "title": "Tourister 12 Seater",
+          "description": "Ideal for group trips with spacious seating and comfortable interiors.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "van2",
+          "title": "Tourister 14 Seater",
+          "description": "Reliable and spacious with excellent comfort for large groups.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "van3",
+          "title": "Tourister 17 Seater",
+          "description": "Perfect choice for big gatherings with ample space and safety features.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "van4",
+          "title": "Tourister 18 Seater",
+          "description": "Spacious and reliable travel experience for your entire group.",
+          "image": "/maharaja.png",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        }
+      ]
+    }
+  ]
+}

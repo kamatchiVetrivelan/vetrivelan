@@ -25,9 +25,14 @@ interface CategoryData {
 interface CarData {
   categories: CategoryData[];
 }
+const whatsappNumber = "+91 98946 92692";
+const baseUrl = "https://api.whatsapp.com/send/";
+const encodedMessage = `Hello, I want details regarding rental cars.`;
+const whatsappLink = `${baseUrl}?phone=${whatsappNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;
 
 // When importing the JSON, explicitly type it
-import carDataJson from "./carData.json";
+import carDataJson from "@/components/services/carData.json";
+import Link from "next/link";
 const carData = carDataJson as CarData;
 
 export function TabsDemo() {
@@ -66,7 +71,8 @@ export function TabsDemo() {
 
   return (
     <div className="h-screen md:h-[37rem] 2xl:h-[43rem] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start pt-4 md:pt-8 ">
-      <Tabs tabs={tabs} containerClassName="mb-2 md:mb-0 z-30" />
+      <Tabs tabs={tabs} containerClassName=" z-30" />
+      <p className="py-2 text-primary text-sm font-medium">We also undertake school and college trips.</p>
     </div>
   );
 }
@@ -105,7 +111,7 @@ const VehicleCard = ({ vehicle }: { vehicle: Vehicle }) => {
                   : "border border-purple-600 text-purple-600 hover:bg-purple-50"
               }`}
             >
-              {button.text}
+              <Link href={whatsappLink}>{button.text}</Link>
             </button>
           ))}
         </div>

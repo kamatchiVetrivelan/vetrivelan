@@ -29,8 +29,12 @@ interface CarData {
 }
 
 // When importing the JSON, explicitly type it
-import carDataJson from "@/app/services/carData.json";
+import carDataJson from "@/components/services/carData.json";
 const carData = carDataJson as CarData;
+const whatsappNumber = "+91 98946 92692";
+const baseUrl = "https://api.whatsapp.com/send/";
+const encodedMessage = `Hello, I want details regarding rental cars.`;
+const whatsappLink = `${baseUrl}?phone=${whatsappNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;
 
 export function FleetTeaser() {
   // Get the first vehicle from each category
@@ -108,7 +112,7 @@ export function FleetTeaser() {
                   </p>
                   <div className="flex justify-between items-center">
                     <button className="bg-primary text-white px-3 py-1.5 rounded-md text-sm hover:bg-purple-700 transition-colors">
-                      View Details
+                      <Link href={whatsappLink}>More Details</Link>
                     </button>
                     <Link
                       href="/services"

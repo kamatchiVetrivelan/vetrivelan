@@ -1,17 +1,14 @@
 "use client";
 
-// import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
     <div>
-        
       <div className="pt-16 md:pt-20 rounded-md flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-        <h2 className="text-2xl md:text-4xl font-bold  text-white pb-8">
+        <h2 className="text-2xl md:text-4xl font-bold text-white pb-8">
           What our customers say
         </h2>
-
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
@@ -25,31 +22,32 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Vetrivelan Cars made our family trip to Ooty absolutely easy! The car was well-maintained, and the journey was smooth.",
+    name: "Arun K",
+    avatar: "/arun.jpg", // Replace with actual path
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "We booked a Sabarimala pilgrimage trip with Vetrivelan Travels. The driver was respectful and knowledgeable about the routes.",
+    name: "Lakshmi",
+    avatar: "/lakshmi.jpg", // Replace with actual path
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "Coimbatore to Palani, Vetrivelan Cars provided us with a clean and comfortable Innova. Reasonable pricing.",
+    name: "Darshan Raju",
+    avatar: "/darshan.jpg", // Replace with actual path
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "We rented a Maharaja 8-seater for a family wedding, and it was an excellent choice. The vehicle was spacious and luxurious.",
+    name: "Ravi Kumar",
+    avatar: "/ravi.jpg", // Replace with actual path
+  },
+  {
+    quote:
+      "Our company booked Vetrivelan Cars for a business trip to Chennai. Very spacious innova crysta!",
+    name: "Syed Rizwan",
+    avatar: "/rizwan.jpg", // Replace with actual path
   },
 ];
