@@ -39,7 +39,7 @@ export default function TourDetailClient({ tourData }: TourDetailClientProps) {
   
  
   return (
-    <section className="md:padding container ">
+    <section className="md:padding container pt-20 ">
     <div className=" mx-auto px-10 py-8 ">
        {/* Title and Description */}
        <div className="mt-4 flex justify-center flex-col text-justify items-center ">

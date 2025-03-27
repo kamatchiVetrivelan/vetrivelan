@@ -62,7 +62,7 @@ export default function TourHerosection() {
 
   return (
     <>
-      <section
+      {/* <section
         className="bg-green-950 items-center justify-center flex flex-col w-full lg:p-2 mb-[250px] md:h-[400px] object-cover"
         style={{
           backgroundImage: "url('/Images/hero-5.jpg')",
@@ -70,8 +70,8 @@ export default function TourHerosection() {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-      >
-        <div className="absolute flex flex-col items-center justify-center text-center p-4">
+      > */}
+        {/* <div className="absolute flex flex-col items-center justify-center text-center p-4">
           <h1 className="text-4xl font-bold text-white mb-4">
             Discover Amazing Tour Packages
           </h1>
@@ -79,26 +79,26 @@ export default function TourHerosection() {
             Explore India&apos;s most beautiful destinations with our carefully
             curated tour packages designed for unforgettable experiences.
           </p>
-        </div>
+        </div> */}
 
-        <div className="min-h-[300px] mx-auto bg-white rounded-t-full px-2 md:px-40 py-20 mt-[400px] -mb-[100px] relative">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-2 lg:gap-4 -mt-12 ">
+        <div className="min-h-[300px mx-auto bg-black rounded-t- px- lg:px-12 pt-10 md:pt-40 mt-[400px -mb-[100px relative">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap- lg:gap-2   ">
       {images.map((image, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center text-center borde rounded-lg p-4 h-full"
+          className="flex flex-col  items-center justify-center text-center borde rounded-lg p-4 h-full"
         >
           <div className="mb-4 w-full h-48 flex items-center justify-center">
             <Image
               src={image.src}
               alt={image.alt}
-              width={400}
+              width={500}
               height={400}
-              className="rounded-xl w-48 h-48 object-cover border-b-4 rounded-tl-2xl rounded-tr-sm  border-primary"
+              className="rounded-xl md:w-80 md:h-80 h-52 w-48 object-cover border-b-4 rounded-tl-2xl rounded-tr-sm  border-primary md:mb-28"
             />
           </div>
-          <div className="h-16 flex items-center justify-center">
-            <h3 className="text-lg font-bold text-blue-950 px-2">
+          <div className="h-16 flex items-center justify-center ">
+            <h3 className="text-lg font-bold text-blue-50 px-2">
               {image.title}
             </h3>
           </div>
@@ -122,13 +122,13 @@ export default function TourHerosection() {
     </div>
 
         </div>
-      </section>
+      {/* </section> */}
 
       {/* Feature Section */}
       {selectedPackage &&
         tourPackagesData[selectedPackage as keyof typeof tourPackagesData] && (
-          <section id="feature-section" className="py-16 bg-blue-950 rounded-t-3xl  padding  ">
-            <div className="container mx-auto px-4">
+          <section id="feature-section" className="py-16 bg-black rounded-t-  ">
+            <div className="container mx-auto px-4 padding flex flex-col justify-center items-center ">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-blue-50 mb-4">
                   {
