@@ -4,7 +4,7 @@
   import Link from "next/link"
  import InteractiveBentoGallery from "@/components/interactive-bento-gallery"
 import { TourTimeline } from "@/components/ui/timeline";
-import { FlexibleSheetDemo } from "@/public/flexible-sheet";
+import { FlexibleSheetDemo } from "@/components/flexible-sheet";
 import { Modal, ModalTrigger } from "@/components/ui/animated-modal";
 
 interface TourDetailClientProps {

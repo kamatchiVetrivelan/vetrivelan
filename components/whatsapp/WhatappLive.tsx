@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 function WhatsappLive() {
-  const whatsappNumber = "+91 75501 95506";
+  const whatsappNumber = "+91 98946 92692";
   const baseUrl = "https://api.whatsapp.com/send/";
   const encodedMessage = `Hello, I want details regarding rental cars.`;
   const whatsappLink = `${baseUrl}?phone=${whatsappNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;

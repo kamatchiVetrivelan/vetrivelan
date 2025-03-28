@@ -106,8 +106,8 @@ export default function TourHerosection() {
             onClick={() => handleViewDetails(image.title)}
             className={`mt-2 py-2 px-4 rounded-md text-sm transition duration-300 flex justify-center items-center gap-2 w-full ${
               selectedPackage === image.title
-                ? "bg-primary text-white  border-b-4 rounded-b-xl  border-slate-500"
-                : "bg-slate-500  border-b-4 rounded-b-xl  border-primary text-white"
+                ? "bg-primary text-white  border-b-4 rounded-b-xl  border-blue-900"
+                : "bg-blue-900  border-b-4 rounded-b-xl  border-primary text-white"
             }`}
           >
             View Details
@@ -127,8 +127,9 @@ export default function TourHerosection() {
       {/* Feature Section */}
       {selectedPackage &&
         tourPackagesData[selectedPackage as keyof typeof tourPackagesData] && (
-          <section id="feature-section" className="py-16 bg-black rounded-t-  ">
+           <section id="feature-section" className="py-16 bg-black rounded-t-  ">
             <div className="container mx-auto px-4 padding flex flex-col justify-center items-center ">
+ 
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-blue-50 mb-4">
                   {
@@ -137,7 +138,7 @@ export default function TourHerosection() {
                     ]?.title
                   }
                 </h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                <p className="text-xl text-gray-200 max-w-3xl mx-auto">
                   {
                     tourPackagesData[
                       selectedPackage as keyof typeof tourPackagesData

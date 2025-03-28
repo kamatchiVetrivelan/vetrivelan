@@ -100,7 +100,7 @@ export const AnimatedTestimonials = ({
         </div>
 
         {/* Text Section - Left on md+ screens, bottom on mobile */}
-        <div className="w-full md:w-1/2 flex flex-col justify-between py-4">
+        <div className="w-full md:w-1/2 md:pt-24 2xl:pt-28 flex flex-col justify-between py-4">
           <motion.div
             key={active}
             initial={{
@@ -153,15 +153,16 @@ export const AnimatedTestimonials = ({
                 </motion.span>
               ))}
             </motion.p>
-            <div className="mt-10  w-full flex items-start justify-start gap-x-4 max-w-md mx-auto lg:mx-0">
-              <Button asChild>
-                <Link href="/tourpackages">Dream Destinations</Link>
-              </Button>
-              <Button asChild>
-                <Link href="/services">Our Vehicles</Link>
-              </Button>
-            </div>
           </motion.div>
+          <div className="mt-10  w-full flex items-start justify-start gap-x-4 max-w-md mx-auto lg:mx-0">
+            <Button asChild>
+              <Link href="/tourpackages">Dream Destinations</Link>
+            </Button>
+            <Button asChild>
+              <Link href="/services">Our Vehicles</Link>
+            </Button>
+          </div>
+
           <div className="flex gap-4 pt-8 md:pt-12">
             <button
               onClick={handlePrev}
