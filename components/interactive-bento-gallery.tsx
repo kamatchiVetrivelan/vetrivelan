@@ -171,7 +171,7 @@ const GalleryModal = ({ selectedItem, isOpen, onClose, setSelectedItem, mediaIte
       >
         {/* Main Content */}
         <div className="h-full flex flex-col">
-          <div className="flex-1 p-2 sm:p-3 md:p-4 flex items-center justify-center bg-gray-50/50">
+          <div className="flex-1 p-2 sm:p-3 md:p-4 flex items-center justify-center bg-black">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedItem.id}

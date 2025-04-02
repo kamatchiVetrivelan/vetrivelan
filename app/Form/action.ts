@@ -5,11 +5,8 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY || "");
 
 interface EmailData {
-  FirstName: string;
-  LastName: string;
-  BusinessEmail: string;
-  Company: string;
-  Position: string;
+   Name: string;
+comment?:string;
   PhoneNumber: string;
 }
 
@@ -17,12 +14,10 @@ interface EmailData {
 export async function sendEmail(data: EmailData) {
   try {
     const {
-      FirstName,
-      LastName,
-      BusinessEmail,
-      Company,
-      Position,
+      Name,
+      
       PhoneNumber,
+      comment,
     } = data;
 
     const emailResponse = await resend.emails.send({
@@ -33,12 +28,10 @@ export async function sendEmail(data: EmailData) {
         <p>New form submission received:</p>
         <ul>cls
         
-          <li><strong>First Name:</strong> ${FirstName}</li>
-          <li><strong>Last Name:</strong> ${LastName}</li>
-          <li><strong>Business Email:</strong> ${BusinessEmail}</li>
-          <li><strong>Company:</strong> ${Company}</li>
-          <li><strong>Position:</strong> ${Position}</li>
-          <li><strong>Phone Number:</strong> ${PhoneNumber}</li>
+          <li><strong>First Name:</strong> ${ Name}</li>
+           
+          <li><strong>Company:</strong> ${comment}</li>
+           <li><strong>Phone Number:</strong> ${PhoneNumber}</li>
         </ul>
       `,
     });

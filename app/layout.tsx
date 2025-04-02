@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Container from "@/components/global/Container";
 import WhatsappLive from "@/components/whatsapp/WhatappLive";
 import { Toaster } from "@/components/ui/sonner"
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,13 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased    min-h-screen`}
       >
         <Container className="">
  
           <Navbar />
            {children}
           <Toaster />
+          <Footer/>
         </Container>
         <WhatsappLive />
       </body>

@@ -33,6 +33,11 @@ export default function TourHerosection() {
       alt: "Kerala tourism",
     },
     {
+      title: "Karnataka Tour Package",
+      src: "/Images/hero-5.jpg",
+      alt: "Karnataka Tour Package",
+    },
+    {
       title: "Hill Station Tour Package",
       src: "/Images/Hills.jpg",
       alt: "Hill stations",
@@ -62,68 +67,49 @@ export default function TourHerosection() {
 
   return (
     <>
-      {/* <section
-        className="bg-green-950 items-center justify-center flex flex-col w-full lg:p-2 mb-[250px] md:h-[400px] object-cover"
-        style={{
-          backgroundImage: "url('/Images/hero-5.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      > */}
-        {/* <div className="absolute flex flex-col items-center justify-center text-center p-4">
-          <h1 className="text-4xl font-bold text-white mb-4">
-            Discover Amazing Tour Packages
-          </h1>
-          <p className="text-xl text-white max-w-2xl">
-            Explore India&apos;s most beautiful destinations with our carefully
-            curated tour packages designed for unforgettable experiences.
-          </p>
-        </div> */}
+      
 
-        <div className="min-h-[300px mx-auto bg-black rounded-t- px- lg:px-12 pt-10 md:pt-40 mt-[400px -mb-[100px relative">
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap- lg:gap-2   ">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className="flex flex-col  items-center justify-center text-center borde rounded-lg p-4 h-full"
+<div className="min-h-[300px] mx-auto bg-black  px-4 lg:px-12 pt-6 md:pt-10 relative">
+  <div className="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-4 lg:gap-6">
+    {images.map((image, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center text-center rounded-lg p-2 sm:p-4 h-full"
+      >
+        <div className="mb-2 sm:mb-4 w-full md:h-80  h-64 flex items-center justify-center">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={500}
+            height={400}
+            className="rounded-xl h-full w-full object-cover border-b-4 rounded-tl-2xl rounded-tr-sm border-primary"
+          />
+        </div>
+        <div className="h-12 sm:h-16 flex items-center justify-center">
+          <h3 className="text-sm sm:text-lg font-bold text-blue-50 px-2">
+            {image.title}
+          </h3>
+        </div>
+        <Button
+          onClick={() => handleViewDetails(image.title)}
+          className={`mt-2 py-1 sm:py-2 px-2 sm:px-4 rounded-md text-xs sm:text-sm transition duration-300 flex justify-center items-center gap-1 sm:gap-2 w-full ${
+            selectedPackage === image.title
+              ? "bg-primary text-white border-b-4 rounded-b-xl border-blue-900"
+              : "bg-blue-900 border-b-4 rounded-b-xl border-primary text-white"
+          }`}
         >
-          <div className="mb-4 w-full h-48 flex items-center justify-center">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={500}
-              height={400}
-              className="rounded-xl md:w-80 md:h-80 h-52 w-48 object-cover border-b-4 rounded-tl-2xl rounded-tr-sm  border-primary md:mb-28"
-            />
-          </div>
-          <div className="h-16 flex items-center justify-center ">
-            <h3 className="text-lg font-bold text-blue-50 px-2">
-              {image.title}
-            </h3>
-          </div>
-          <Button
-            onClick={() => handleViewDetails(image.title)}
-            className={`mt-2 py-2 px-4 rounded-md text-sm transition duration-300 flex justify-center items-center gap-2 w-full ${
-              selectedPackage === image.title
-                ? "bg-primary text-white  border-b-4 rounded-b-xl  border-blue-900"
-                : "bg-blue-900  border-b-4 rounded-b-xl  border-primary text-white"
-            }`}
-          >
-            View Details
-            {selectedPackage === image.title ? (
-              <ChevronUp size={16} />
-            ) : (
-              <ChevronDown size={16} />
-            )}
-          </Button>
-        </div>
-      ))}
-    </div>
-
-        </div>
-      {/* </section> */}
-
+          View Details
+          {selectedPackage === image.title ? (
+            <ChevronUp size={14} />
+          ) : (
+            <ChevronDown size={14} />
+          )}
+        </Button>
+      </div>
+    ))}
+  </div>
+</div>
+ 
       {/* Feature Section */}
       {selectedPackage &&
         tourPackagesData[selectedPackage as keyof typeof tourPackagesData] && (
