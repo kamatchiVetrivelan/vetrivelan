@@ -25,10 +25,9 @@ const Navbar = () => {
   ];
 
   return (
- 
     <header className="fixed text-white top-0 left-0 px-8 md:px-12 2xl:px-16 right-0 h-24 flex items-center bg-black z-50 w-full shadow-sm">
       <div className="mx-auto  w-full  h-full">
-         <nav className="flex justify-between items-center h-full">
+        <nav className="flex justify-between items-center h-full">
           {/* Logo on the left */}
           <div>
             {" "}
@@ -54,10 +53,15 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <Link href="#">
+            
+            <Link
+              href="tel:+916369857591"
+              className="inline-block"
+              onClick={closeNavbar}
+            >
               <Button
-                className="text-white bg-primary hover:opacity-90"
-                aria-label="Contact us"
+                className="text-white bg-primary hover:opacity-90 cursor-pointer"
+                aria-label="Contact us "
               >
                 Contact Us
               </Button>

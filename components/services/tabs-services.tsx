@@ -9,6 +9,7 @@ interface ButtonProps {
 }
 
 interface Vehicle {
+  capacity: string;
   id: string;
   title: string;
   description: string;
@@ -56,7 +57,7 @@ export function TabsDemo() {
     title: category.title,
     value: category.value,
     content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 md:p-6 text-white bg-gradient-to-br from-purple-700 to-violet-900">
+      <div className="w-full overflow-hidden relative h-full rounded-2xl p-4 md:p-6 text-white bg-gradient-to-br from-purple-700 to-violet-900 ">
         <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 px-3">
           {category.title}
         </h2>
@@ -84,7 +85,7 @@ const VehicleCard = ({ vehicle }: { vehicle: Vehicle }) => {
         <Image
           src={vehicle.image}
           alt={vehicle.title}
-          className="object-contain"
+          className="object-contain mx-auto flex justify-center items-center"
           width={280}
           height={160}
           style={{
@@ -95,10 +96,14 @@ const VehicleCard = ({ vehicle }: { vehicle: Vehicle }) => {
         />
       </div>
       <div className="p-3 md:p-4 flex flex-col flex-grow">
-        <h3 className="font-bold text-base md:text-lg mb-1 md:mb-2 text-transparent bg-clip-text bg-gradient-to-br from-purple-700 to-violet-900">
+        <h3 className="font-bold text-base md:text-lg  text-transparent bg-clip-text bg-gradient-to-br from-purple-700 to-violet-900">
           {vehicle.title}
         </h3>
-        <p className="text-xs md:text-sm mb-2 md:mb-4 flex-grow">
+        <h4 className="text-xs text-gray-500 font-bold">
+          {vehicle.capacity}
+        </h4>
+
+        <p className="text-xs md:text-sm mt-3 mb-2 md:mb-4 flex-grow">
           {vehicle.description}
         </p>
         <div className="flex flex-wrap gap-2">

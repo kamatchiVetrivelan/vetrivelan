@@ -9,6 +9,7 @@
           "title": "Swift Dzire",
           "description": "Perfect for a comfortable city ride for a small family.",
           "image": "/swiftdzire.png",
+          "capacity": "5 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
@@ -19,6 +20,7 @@
           "title": "Toyota Etios",
           "description": "Spacious interiors and reliable performance for a smooth journey.",
           "image": "/etios.png",
+          "capacity": "5 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
@@ -32,9 +34,10 @@
       "vehicles": [
         {
           "id": "suv1",
-          "title": "Toyota Innova",
+          "title": "Suzuki Ertiga",
           "description": "Ideal for family trips with ample space and ultimate comfort.",
-          "image": "/innova1.png",
+          "image": "/ertiga.png",
+          "capacity": "7 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
@@ -42,9 +45,21 @@
         },
         {
           "id": "suv2",
+          "title": "Toyota Innova",
+          "description": "Ideal for family trips with ample space and ultimate comfort.",
+          "image": "/innova1.png",
+          "capacity": "7 seater",
+          "buttons": [
+            { "text": "More Details", "type": "primary" },
+            { "text": "Book Vehicle", "type": "secondary" }
+          ]
+        },
+        {
+          "id": "suv3",
           "title": "Toyota Innova Crysta",
           "description": "Premium luxury and powerful performance for long drives.",
           "image": "/crysta1.png",
+          "capacity": "7 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
@@ -61,6 +76,7 @@
           "title": "Toyota Innova Hycross",
           "description": "Unmatched luxury with cutting-edge technology and top-class comfort.",
           "image": "/hycross.png",
+          "capacity": "7 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
@@ -68,19 +84,10 @@
         },
         {
           "id": "luxury2",
-          "title": "Maharaja 8 seater",
+          "title": "Force Maharaja ",
           "description": "Travel like royalty with spacious seating and premium features.",
-          "image": "/maharaja.png",
-          "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
-        },
-        {
-          "id": "luxury3",
-          "title": "Maharaja 10 seater",
-          "description": "Elegant design and ultimate comfort for large groups and families.",
-          "image": "/maharaja.png",
+          "image": "/maharajapro.jpg",
+          "capacity": "8 seater | 10 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
@@ -94,9 +101,10 @@
       "vehicles": [
         {
           "id": "van1",
-          "title": "Tourister 12 Seater",
+          "title": "Force Urbania",
           "description": "Ideal for group trips with spacious seating and comfortable interiors.",
-          "image": "/maharaja.png",
+          "image": "/urbania.jpg",
+          "capacity": "9 seater | 12 seater | 16 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
@@ -104,9 +112,10 @@
         },
         {
           "id": "van2",
-          "title": "Tourister 14 Seater",
-          "description": "Reliable and spacious with excellent comfort for large groups.",
+          "title": "Force Traveller",
+          "description": "Ideal for group trips with spacious seating and comfortable interiors.",
           "image": "/maharaja.png",
+          "capacity": "12 seater | 14 seater | 17 seater | 18 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
@@ -114,19 +123,10 @@
         },
         {
           "id": "van3",
-          "title": "Tourister 17 Seater",
-          "description": "Perfect choice for big gatherings with ample space and safety features.",
-          "image": "/maharaja.png",
-          "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
-        },
-        {
-          "id": "van4",
-          "title": "Tourister 18 Seater",
-          "description": "Spacious and reliable travel experience for your entire group.",
-          "image": "/maharaja.png",
+          "title": "Bus",
+          "description": "Ideal for group trips with spacious seating and comfortable interiors.",
+          "image": "/bus.png",
+          "capacity": "30 seater | 50 seater",
           "buttons": [
             { "text": "More Details", "type": "primary" },
             { "text": "Book Vehicle", "type": "secondary" }
