@@ -8,8 +8,8 @@ export const tourPackagesData = {
           title: "Coimbatore",
           description:
             "Explore the capital city of Tamil Nadu with its beautiful Marina Beach, historic temples, and colonial architecture.",
-          image: "/Images/hero-2.jpg",
-          detailImages: ["/Images/hero-10.jpg", "/Images/hero-9.jpg", "/Images/hero-8.jpg","/Images/hero-7.jpg","/Images/hero-6.jpg","/Images/hero-1.jpg"],
+          image: "/tp-features/cbe.jpeg",
+          detailImages: ["/cbe/cbe-4.jpg", "/cbe/cbe-2.jpeg", "/cbe/cbe-1.jpg","/cbe/cbe-3.jpg" ],
           fullDescription:
             "Chennai, formerly known as Madras, is the capital city of Tamil Nadu and a major cultural, economic, and educational center of South India. This vibrant metropolis offers a perfect blend of tradition and modernity with its historic landmarks, beautiful beaches, and bustling markets.",
           itinerary: [
@@ -34,7 +34,7 @@ export const tourPackagesData = {
           title: "Ooty",
           description:
             "Visit the UNESCO World Heritage site featuring ancient rock-cut temples and shore temples from the 7th century.",
-          image: "/Images/hero-3.jpg",
+          image: "/tp-features/ooty.jpg",
           detailImages: ["/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg"],
           fullDescription:
             "Mahabalipuram, also known as Mamallapuram, is a historic city and UNESCO World Heritage site located on the Coromandel Coast of Tamil Nadu. Famous for its stone-carved monuments dating back to the 7th and 8th centuries, this ancient port city showcases the architectural brilliance of the Pallava dynasty.",
@@ -72,8 +72,8 @@ export const tourPackagesData = {
           title: "Kodaikanal",
           description:
             "Experience the French colonial charm of this unique coastal town with its colorful streets and peaceful ashrams.",
-          image: "/Images/hero-4.jpg",
-          detailImages: ["/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg"],
+          image: "/tp-features/kodai.jpg",
+          detailImages: ["/samplw-1.jpg", "/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg"],
           fullDescription:
             "Pondicherry (now Puducherry) is a charming coastal town that was a French colonial settlement until 1954. The city's unique blend of French and Tamil cultures is evident in its architecture, cuisine, and lifestyle. With its clean beaches, spiritual centers, and colonial heritage, Pondicherry offers a tranquil escape from the hustle and bustle of city life.",
           itinerary: [
@@ -98,7 +98,7 @@ export const tourPackagesData = {
           title: "Kanayakumari",
           description:
             "Visit the magnificent Meenakshi Amman Temple and explore the ancient city's rich cultural heritage.",
-          image: "/Images/hero-5.jpg",
+          image: "/tp-features/kanyakumari.jpeg",
           detailImages: ["/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg"],
           fullDescription:
             "Madurai, one of the oldest continuously inhabited cities in the world, is the cultural capital of Tamil Nadu. Known as the 'Athens of the East', Madurai's skyline is dominated by the colorful gopurams (towers) of the Meenakshi Amman Temple. This ancient city offers visitors a glimpse into the rich religious and cultural heritage of South India.",
@@ -130,7 +130,7 @@ export const tourPackagesData = {
           title: "Valparai",
           description:
             "Enjoy the cool climate and scenic beauty of this popular hill station with its tea gardens and botanical gardens.",
-          image: "/Images/hero-6.jpg",
+          image: "/tp-features/valparai.jpeg",
           detailImages: ["/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg"],
           fullDescription:
             "Ooty (Udhagamandalam), known as the 'Queen of Hill Stations', is a picturesque hill station in the Nilgiri Hills of Tamil Nadu. Established as a summer retreat during British colonial rule, Ooty charms visitors with its pleasant climate, lush tea plantations, beautiful lakes, and well-maintained gardens. The hill station offers a perfect escape from the heat of the plains.",
@@ -185,7 +185,7 @@ export const tourPackagesData = {
           title: "Black Thunder",
           description:
             "Discover the princess of hill stations with its star-shaped lake, pine forests, and beautiful viewpoints.",
-          image: "/Images/hero-7.jpg",
+          image: "/tp-features/black-thunder",
           detailImages: ["/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg"],
           fullDescription:
             "Kodaikanal, known as the 'Princess of Hill Stations', is a charming hill retreat in the Palani Hills of Tamil Nadu. At an altitude of 7,000 feet, this hill station offers a refreshing climate, misty landscapes, and a tranquil atmosphere. With its star-shaped lake, dense forests, cascading waterfalls, and scenic viewpoints, Kodaikanal is a paradise for nature lovers and those seeking peace away from urban chaos.",
@@ -217,7 +217,7 @@ export const tourPackagesData = {
           title: "Mudumalai",
           description:
             "Discover the princess of hill stations with its star-shaped lake, pine forests, and beautiful viewpoints.",
-          image: "/Images/hero-7.jpg",
+          image: "/tp-features/mudumalai.jpg",
           detailImages: ["/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg", "/Images/TamilNadu.jpg"],
           fullDescription:
             "Kodaikanal, known as the 'Princess of Hill Stations', is a charming hill retreat in the Palani Hills of Tamil Nadu. At an altitude of 7,000 feet, this hill station offers a refreshing climate, misty landscapes, and a tranquil atmosphere. With its star-shaped lake, dense forests, cascading waterfalls, and scenic viewpoints, Kodaikanal is a paradise for nature lovers and those seeking peace away from urban chaos.",
@@ -249,8 +249,8 @@ export const tourPackagesData = {
           title: "Rameswaram",
           description:
             "Explore the lush green tea plantations and enjoy the cool climate of this beautiful hill station.",
-          image: "/Images/kerala.jpg",
-          detailImages: ["/Images/kerala.jpg", "/Images/kerala.jpg", "/Images/kerala.jpg"],
+          image: "/tp-features/rameswaram.jpeg",
+          detailImages: ["/tp-places/rameswaram-1.jpeg", "/tp-places/rameswaram-2.jpg","/tp-places/rameswaram-3.jpg", "/tp-places/rameswaram-4.jpg","/tp-places/rameswaram-5.jpg"],
           fullDescription:
             "Munnar, situated at the confluence of three mountain streams, is a picturesque hill station in Kerala's Western Ghats. Once a summer resort of the British government in South India, Munnar is famous for its vast expanse of tea plantations, pristine valleys, and cool mountain air. The hill station stands at 1,600 meters above sea level, offering breathtaking views and a pleasant climate throughout the year.",
           itinerary: [
@@ -276,8 +276,8 @@ export const tourPackagesData = {
           title: "Athirappilly",
           description:
             "Cruise through the serene backwaters of Kochi and witness the traditional fishing nets and colonial architecture.",
-          image: "/Images/kerala.jpg",
-          detailImages: ["/Images/kerala.jpg", "/Images/kerala.jpg", "/Images/kerala.jpg"],
+          image: "/tp-features/athirappilly.jpeg",
+          detailImages: ["/tp-places/athirappilly-1.jpeg", "/tp-places/athirappilly-2.jpeg", "/tp-places/athirappilly-3.jpg","/tp-places/athirappilly-4.jpeg"],
           fullDescription:
             "Kochi (formerly Cochin) is a vibrant city located on the southwest coast of India. Known as the 'Queen of the Arabian Sea', Kochi has been a port city since the 14th century and has attracted traders and travelers from around the world. The city's unique blend of Dutch, Portuguese, and British colonial architecture, combined with its traditional fishing nets and serene backwaters, makes it a fascinating destination.",
           itinerary: [
@@ -310,12 +310,12 @@ export const tourPackagesData = {
        
         },
          {
-          id: "munnar ",
-          title: "Munnar  ",
+          id: "munnar",
+          title: "Munnar",
           description:
             "Explore the lush green tea plantations and enjoy the cool climate of this beautiful hill station.",
-          image: "/Images/kerala.jpg",
-          detailImages: ["/Images/kerala.jpg", "/Images/kerala.jpg", "/Images/kerala.jpg"],
+          image: "/tp-features/munnar.jpeg",
+          detailImages: ["/tp-places/munnar-7.jpg","/tp-places/munnar-1.jpg", "/tp-places/munnar-2.jpg","/tp-places/munnar-3.jpg","/tp-places/munnar-4.jpeg", "/tp-places/munnar-6.jpg",],
           fullDescription:
             "Munnar, situated at the confluence of three mountain streams, is a picturesque hill station in Kerala's Western Ghats. Once a summer resort of the British government in South India, Munnar is famous for its vast expanse of tea plantations, pristine valleys, and cool mountain air. The hill station stands at 1,600 meters above sea level, offering breathtaking views and a pleasant climate throughout the year.",
           itinerary: [
@@ -369,8 +369,8 @@ export const tourPackagesData = {
           title: "Cochin",
           description:
             "Explore the lush green tea plantations and enjoy the cool climate of this beautiful hill station.",
-          image: "/Images/kerala.jpg",
-          detailImages: ["/Images/kerala.jpg", "/Images/kerala.jpg", "/Images/kerala.jpg"],
+          image: "/tp-features/kochi.jpg",
+          detailImages: ["/tp-places/cochin-1.jpg", "/tp-places/cochin-2.jpg", "/tp-places/cochin-3.jpeg","/tp-places/cochin-4.jpeg","/tp-places/cochin-5.jpg",],
           fullDescription:
             "Munnar, situated at the confluence of three mountain streams, is a picturesque hill station in Kerala's Western Ghats. Once a summer resort of the British government in South India, Munnar is famous for its vast expanse of tea plantations, pristine valleys, and cool mountain air. The hill station stands at 1,600 meters above sea level, offering breathtaking views and a pleasant climate throughout the year.",
           itinerary: [
@@ -390,8 +390,8 @@ export const tourPackagesData = {
           title: "Wayanad",
           description:
             "Explore the lush green tea plantations and enjoy the cool climate of this beautiful hill station.",
-          image: "/Images/kerala.jpg",
-          detailImages: ["/Images/kerala.jpg", "/Images/kerala.jpg", "/Images/kerala.jpg"],
+          image: "/tp-features/wayanad.jpg",
+          detailImages: ["/tp-places/wayanad-1.jpeg", "/tp-places/wayanad-2.jpg", "/tp-places/wayanad-3.jpg","/tp-places/wayanad-4.jpg","/tp-places/wayanad-5.jpeg",],
           fullDescription:
             "Munnar, situated at the confluence of three mountain streams, is a picturesque hill station in Kerala's Western Ghats. Once a summer resort of the British government in South India, Munnar is famous for its vast expanse of tea plantations, pristine valleys, and cool mountain air. The hill station stands at 1,600 meters above sea level, offering breathtaking views and a pleasant climate throughout the year.",
           itinerary: [
@@ -417,7 +417,7 @@ export const tourPackagesData = {
             title: "Mysore",
             description:
               "Cruise through the serene backwaters of Kochi and witness the traditional fishing nets and colonial architecture.",
-            image: "/Images/kerala.jpg",
+            image: "/tp-features/",
             detailImages: ["/Images/kerala.jpg", "/Images/kerala.jpg", "/Images/kerala.jpg"],
             fullDescription:
               "Kochi (formerly Cochin) is a vibrant city located on the southwest coast of India. Known as the 'Queen of the Arabian Sea', Kochi has been a port city since the 14th century and has attracted traders and travelers from around the world. The city's unique blend of Dutch, Portuguese, and British colonial architecture, combined with its traditional fishing nets and serene backwaters, makes it a fascinating destination.",
@@ -455,7 +455,7 @@ export const tourPackagesData = {
             title: "Coorg",
             description:
               "Explore the lush green tea plantations and enjoy the cool climate of this beautiful hill station.",
-            image: "/Images/kerala.jpg",
+            image: "/tp-features/",
             detailImages: ["/Images/kerala.jpg", "/Images/kerala.jpg", "/Images/kerala.jpg"],
             fullDescription:
               "Munnar, situated at the confluence of three mountain streams, is a picturesque hill station in Kerala's Western Ghats. Once a summer resort of the British government in South India, Munnar is famous for its vast expanse of tea plantations, pristine valleys, and cool mountain air. The hill station stands at 1,600 meters above sea level, offering breathtaking views and a pleasant climate throughout the year.",
@@ -476,7 +476,7 @@ export const tourPackagesData = {
             title: "Bengaluru",
             description:
               "Explore the lush green tea plantations and enjoy the cool climate of this beautiful hill station.",
-            image: "/Images/kerala.jpg",
+            image: "/tp-features/",
             detailImages: ["/Images/kerala.jpg", "/Images/kerala.jpg", "/Images/kerala.jpg"],
             fullDescription:
               "Munnar, situated at the confluence of three mountain streams, is a picturesque hill station in Kerala's Western Ghats. Once a summer resort of the British government in South India, Munnar is famous for its vast expanse of tea plantations, pristine valleys, and cool mountain air. The hill station stands at 1,600 meters above sea level, offering breathtaking views and a pleasant climate throughout the year.",

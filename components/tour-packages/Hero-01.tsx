@@ -24,32 +24,32 @@ export default function TourHerosection() {
   const images = [
     {
       title: "Tamil Nadu Tour Package",
-      src: "/Images/TamilNadu.jpg",
+      src: "/tp-hero/TamilNadu.jpg",
       alt: "Tamil Nadu tourism",
     },
     {
       title: "Kerala Tour Package",
-      src: "/Images/kerala.jpg",
+      src: "/tp-hero/kerala.jpg",
       alt: "Kerala tourism",
     },
     {
       title: "Karnataka Tour Package",
-      src: "/Images/hero-5.jpg",
+      src: "/tp-hero/karnataka.jpeg",
       alt: "Karnataka Tour Package",
     },
     {
       title: "Hill Station Tour Package",
-      src: "/Images/Hills.jpg",
+      src: "/tp-hero/Hill.jpeg",
       alt: "Hill stations",
     },
     {
       title: "Temple Tour Package",
-      src: "/Images/Temple.jpg",
+      src: "/tp-hero/Temple.jpg",
       alt: "Temple tours",
     },
     {
-      title: "Combine Tour Package",
-      src: "/Images/mussoorie-7243347.jpg",
+      title: "Combo Tour Package",
+      src: "/tp-hero/combo.jpg",
       alt: "Combined tour packages",
     },
   ];
@@ -168,7 +168,7 @@ export default function TourHerosection() {
                           View More
                         </Link>{" "}
                       </Button>
-                      <Button variant="secondary"> Book Now</Button>{" "}
+                      <Button variant="secondary" className="border border-primary hover:border-2 "> Book Now</Button>{" "}
                     </CardFooter>
                   </Card>
                 ))}
