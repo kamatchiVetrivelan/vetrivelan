@@ -23,22 +23,8 @@ export default function TourHerosection() {
 
   const images = [
     {
-      title: "Tamil Nadu Tour Package",
-      src: "/tp-hero/TamilNadu.jpg",
-      alt: "Tamil Nadu tourism",
-    },
-    {
-      title: "Kerala Tour Package",
-      src: "/tp-hero/kerala.jpg",
-      alt: "Kerala tourism",
-    },
-    {
-      title: "Karnataka Tour Package",
-      src: "/tp-hero/karnataka.jpeg",
-      alt: "Karnataka Tour Package",
-    },
-    {
-      title: "Hill Station Tour Package",
+ 
+       title: "Hill Station Tour Package",
       src: "/tp-hero/Hill.jpeg",
       alt: "Hill stations",
     },
@@ -48,9 +34,27 @@ export default function TourHerosection() {
       alt: "Temple tours",
     },
     {
+ 
+      title: "Kerala Tour Package",
+      src: "/Images/kerala.jpg",
+      alt: "Kerala tourism",
+    },
+    {
+      title: "Tamil Nadu Tour Package",
+      src: "/Images/TamilNadu.jpg",
+      alt: "Tamil Nadu tourism",
+    },
+
+    {
+      title: "Karnataka Tour Package",
+      src: "/Images/hero-5.jpg",
+      alt: "Karnataka Tour Package",
+    },
+
+    {
       title: "Combo Tour Package",
-      src: "/tp-hero/combo.jpg",
-      alt: "Combined tour packages",
+      src: "/Images/mussoorie-7243347.jpg",
+       alt: "Combined tour packages",
     },
   ];
 
@@ -70,11 +74,11 @@ export default function TourHerosection() {
       
 
 <div className="min-h-[300px] mx-auto bg-black  px-4 lg:px-12 pt-6 md:pt-10 relative">
-  <div className="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-4 lg:gap-6">
+  <div className="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2  2xl:gap-4">
     {images.map((image, index) => (
       <div
         key={index}
-        className="flex flex-col items-center justify-center text-center rounded-lg p-2 sm:p-4 h-full"
+        className="flex flex-col items-center justify-center text-center rounded-lg p-2 2xl:p-4 h-full"
       >
         <div className="mb-2 sm:mb-4 w-full md:h-80  h-64 flex items-center justify-center">
           <Image

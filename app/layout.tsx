@@ -6,6 +6,7 @@ import Container from "@/components/global/Container";
 import WhatsappLive from "@/components/whatsapp/WhatappLive";
 import { Toaster } from "@/components/ui/sonner"
 import Footer from "@/components/footer";
+import CallButton from "@/components/whatsapp/call-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Footer/>
         </Container>
         <WhatsappLive />
+        <CallButton/>
       </body>
     </html>
   );

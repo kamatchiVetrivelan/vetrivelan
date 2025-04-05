@@ -52,7 +52,7 @@ export const AnimatedTestimonials = ({
       <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-12">
         {/* Image Section - Right on md+ screens, top on mobile */}
         <div className="w-full md:w-1/2">
-          <div className="relative h-[400px] 2xl:h-[600px] w-full">
+          <div className="relative h-[400px]  2xl:h-[600px] w-full">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
