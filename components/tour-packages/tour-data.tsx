@@ -780,7 +780,7 @@ export const tourPackagesData = {
         id: "honeymoon",
         title: "Honey Moon",
         description:
-          "Cruise through the serene backwaters of Kochi and witness the traditional fishing nets and colonial architecture.",
+          "Enjoy your honeymoon breathtaking views, serene lakes, and lush tea gardens with your partner in this perfect honeymoon trip across South India’s hill stations.",
         image: "/Images/kerala.jpg",
         detailImages: [
           "/Images/kerala.jpg",
@@ -788,31 +788,43 @@ export const tourPackagesData = {
           "/Images/kerala.jpg",
         ],
         fullDescription:
-          "Kochi (formerly Cochin) is a vibrant city located on the southwest coast of India. Known as the 'Queen of the Arabian Sea', Kochi has been a port city since the 14th century and has attracted traders and travelers from around the world. The city's unique blend of Dutch, Portuguese, and British colonial architecture, combined with its traditional fishing nets and serene backwaters, makes it a fascinating destination.",
+          "Explore Ooty, Kodaikanal, and Munnar in a romantic getaway filled with nature, scenic beauty, cozy stays, and love.",
         itinerary: [
           {
             day: "Day 1",
-            title: "Arrival in Kochi",
+            title: "Ooty",
             description:
-              "Arrive in Kochi and check into your heritage hotel in Fort Kochi. Evening walk to see the famous Chinese fishing nets at sunset.",
+              "Pickup from Coimbatore , depart to Ooty Centenary Rose Garden, Boathouse, Thread Garden, Children Park, Government Museum, Dodabetta Peak, Tea Factory, Botanical Garden, Wax Museum.",
           },
           {
             day: "Day 2",
-            title: "Colonial Kochi",
+            title: "Mudumalai",
             description:
-              "Explore Fort Kochi's colonial heritage including St. Francis Church, Dutch Palace, and Jewish Synagogue. Evening Kathakali dance performance.",
+              "Pine Forest, Kamarajar Dam, 6th Mile, 9th Mile Cine shooting point, Toda settlements, Golf course, Pykara falls, Pykara lake (Boating), Mudumalai Wildlife Sanctuary.",
           },
           {
             day: "Day 3",
-            title: "Backwater Cruise",
+            title: "Kodaikanal",
             description:
-              "Full-day cruise through the serene backwaters around Kochi. Witness local life along the waterways and enjoy traditional Kerala cuisine on board.",
+              "Depart to Kodaikanal and visit Coakers Walk, Green Valley View, Golf Course, Pillar Rocks, Guna Cave, Pine Forest, Moier Point, Shanthy Valley, Upper Lake View, Kodai City View, Kurinji Andavar Temple.",
           },
           {
             day: "Day 4",
-            title: "Vypeen Island and Cherai Beach",
+            title: "Munnar",
             description:
-              "Ferry to Vypeen Island and visit Cherai Beach, known for its golden sands where the backwaters meet the Arabian Sea.",
+              "Depart to Munnar en route visit Lock Heart View, Gap road View, Power House Water Falls, Anayirangal Dam View. ",
+          },
+          {
+            day: "Day 5",
+            title: "Munnar Day 1",
+            description:
+              "Depart to Munnar en route visit Lock Heart View, Gap road View, Power House Water Falls, Anayirangal Dam View. ",
+          },
+          {
+            day: "Day 6",
+            title: "Rajamalai Wildlife Sanctuary",
+            description:
+              " transfer to Coimbatore en route visit Tea mesuem, Green Valley View, Sandal Wood Forest, Rajamalai Wildlife Sanctuary. ",
           },
         ],
       },
