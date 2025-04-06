@@ -144,10 +144,7 @@ export function FleetTeaser() {
             </Link>
           </div>
         </div>
-        <div className="text-primary text-xs md:text-sm font-semibold">
-          Note: Our professional driver will accompany you — self-drive cars are
-          not available.
-        </div>
+        
       </div>
     </div>
   );

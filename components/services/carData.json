@@ -11,9 +11,8 @@
           "image": "/swiftdzire.png",
           "capacity": "5 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         },
         {
           "id": "sedan2",
@@ -22,9 +21,8 @@
           "image": "/etios.png",
           "capacity": "5 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         }
       ]
     },
@@ -39,20 +37,18 @@
           "image": "/ertiga.png",
           "capacity": "7 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         },
         {
           "id": "suv2",
           "title": "Toyota Innova",
           "description": "Ideal for family trips with ample space and ultimate comfort.",
-          "image": "/innova1.png",
+          "image": "/innovavan.png",
           "capacity": "7 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         },
         {
           "id": "suv3",
@@ -61,9 +57,8 @@
           "image": "/crysta1.png",
           "capacity": "7 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         }
       ]
     },
@@ -75,12 +70,11 @@
           "id": "luxury1",
           "title": "Toyota Innova Hycross",
           "description": "Unmatched luxury with cutting-edge technology and top-class comfort.",
-          "image": "/hycross.png",
+          "image": "/hycrosss.webp",
           "capacity": "7 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         },
         {
           "id": "luxury2",
@@ -89,9 +83,8 @@
           "image": "/maharajapro.jpg",
           "capacity": "8 seater | 10 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         }
       ]
     },
@@ -106,9 +99,8 @@
           "image": "/urbania.jpg",
           "capacity": "9 seater | 12 seater | 16 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         },
         {
           "id": "van2",
@@ -117,9 +109,8 @@
           "image": "/maharaja.png",
           "capacity": "12 seater | 14 seater | 17 seater | 18 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         },
         {
           "id": "van3",
@@ -128,9 +119,8 @@
           "image": "/bus.png",
           "capacity": "30 seater | 50 seater",
           "buttons": [
-            { "text": "More Details", "type": "primary" },
-            { "text": "Book Vehicle", "type": "secondary" }
-          ]
+            { "text": "More Details", "type": "primary" }
+           ]
         }
       ]
     }

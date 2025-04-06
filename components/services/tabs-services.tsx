@@ -34,6 +34,7 @@ const whatsappLink = `${baseUrl}?phone=${whatsappNumber}&text=${encodedMessage}&
 // When importing the JSON, explicitly type it
 import carDataJson from "@/components/services/carData.json";
 import Link from "next/link";
+import { FlexibleSheetDemo } from "../flexible-sheet";
 const carData = carDataJson as CarData;
 
 export function TabsDemo() {
@@ -106,19 +107,20 @@ const VehicleCard = ({ vehicle }: { vehicle: Vehicle }) => {
         <p className="text-xs md:text-sm mt-3 mb-2 md:mb-4 flex-grow">
           {vehicle.description}
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap justify-between gap-2">
           {vehicle.buttons.map((button, index) => (
             <button
               key={index}
               className={`px-2 md:px-4 py-1 md:py-2 rounded text-xs md:text-sm ${
                 button.type === "primary"
                   ? "bg-purple-600 text-white hover:bg-purple-700"
-                  : "border border-purple-600 text-purple-600 hover:bg-purple-50"
+                  : null
               }`}
             >
               <Link href={whatsappLink}>{button.text}</Link>
             </button>
           ))}
+          <FlexibleSheetDemo buttonType={"Services"} />
         </div>
       </div>
     </div>

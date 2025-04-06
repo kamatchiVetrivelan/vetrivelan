@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
+import { FlexibleSheetDemo } from "../flexible-sheet";
 
 const Navbar = () => {
   const [openNavbar, setOpenNavbar] = useState(false);
@@ -53,19 +54,8 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <FlexibleSheetDemo buttonType={"Navbar"}/>
             
-            <Link
-              href="tel:+916369857591"
-              className="inline-block"
-              onClick={closeNavbar}
-            >
-              <Button
-                className="text-white bg-primary hover:opacity-90 cursor-pointer"
-                aria-label="Contact us "
-              >
-                Contact Us
-              </Button>
-            </Link>
           </div>
 
           {/* Mobile navigation */}

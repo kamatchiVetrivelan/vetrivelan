@@ -5,6 +5,7 @@ import { FleetTeaser } from '@/components/home/FleetTeaser';
 
 // import HeroSection from '@/components/home/HeroHome';
 import { InfiniteMovingCardsDemo } from '@/components/home/testimonials';
+import { TourPackagesTeaser } from '@/components/home/tour-teaser';
 // import Image from 'next/image';
 
 // import HeroSection from '@/components/home/HeroHome';
@@ -14,11 +15,12 @@ import { InfiniteMovingCardsDemo } from '@/components/home/testimonials';
 
 function HomePage() {
   return (
-    <div className="bg-black padding pt-10">
+    <div className="bg-black padding py-10">
       <div className="">
         {/* <HeroSection /> */}
         <AnimatedTestimonialsDemo />
         <FeaturesSectionDemo />
+        <TourPackagesTeaser />
         <FleetTeaser />
         <InfiniteMovingCardsDemo />
       </div>

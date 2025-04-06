@@ -36,9 +36,7 @@ export default async function Page({
             detailImages: [],
             image: "",
             itinerary: [],
-            exclusions: [],
-            termsAndConditions: [],
-          }
+            }
         }
         packageName={packageName}
         tourId={tourId}

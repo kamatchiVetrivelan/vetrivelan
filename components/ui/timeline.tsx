@@ -87,15 +87,15 @@ export const TourTimeline = ({ itinerary }: { itinerary: TimelineEntry[] }) => {
                 {item.day}
               </h3>
               <motion.div 
-                className="bg-gray-900/50 border border-red-900/30 p-6 rounded-lg shadow-lg mb-6 backdrop-blur-sm"
+                className="bg-white border border-red-900/30 p-6 rounded-lg shadow-lg mb-6 backdrop-blur-sm"
                 whileHover={{ 
                   scale: 1.02, 
                   boxShadow: "0 0 15px rgba(255, 0, 0, 0.3)",
                   transition: { duration: 0.3 }
                 }}
               >
-                <h4 className="text-xl font-bold text-white dark:text-white mb-2">{item.title}</h4>
-                <p className="text-gray-300 dark:text-gray-300">{item.description}</p>
+                <h4 className="text-xl font-bold text-blue-950 dark:text-white mb-2">{item.title}</h4>
+                <p className="text-gray-700 dark:text-gray-300">{item.description}</p>
               </motion.div>
             </motion.div>
           </div>
