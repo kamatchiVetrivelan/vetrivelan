@@ -13,8 +13,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { LoadingButton } from "@/components/ui/LoadingButton";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+ import { Button } from "@/components/ui/button";
 import { FloatingLabelInput } from "@/components/ui/floating-label-input";
 import {
   Sheet,
@@ -27,7 +26,7 @@ import {
 import { sendEmail } from "@/app/Form/action";
 import { Textarea } from "./ui/textarea";
 
-type ButtonType = "Home" | "gradient" | "Navbar" | "Touch" | "Hamburger";
+type ButtonType = "Home" | "Tour" | "Navbar" | "Services" | "Hamburger";
 
 interface FlexibleSheetDemoProps {
   buttonType: ButtonType;
@@ -91,18 +90,37 @@ export function FlexibleSheetDemo({ buttonType }: FlexibleSheetDemoProps) {
         return <div className="">Get started </div>;
       case "Navbar":
         return (
-          <Link
-            href="#"
-            className="bg-[#29abe2] text-white px-4 py-2 rounded-md hover:bg-blue-600 transition hidden md:block"
+          <Button
+            className="text-white bg-primary hover:opacity-90 cursor-pointer"
+            aria-label="Contact us "
           >
-            Get Started
-          </Link>
+            Contact Us
+          </Button>
         );
-    
+
       case "Hamburger":
         return (
           <Button className="w-full text-white bg-primary hover:bg-primary/30  py-6 font-semibold text-xl">
             Contact us
+          </Button>
+        );
+      case "Services":
+        return (
+          <Button
+            variant="secondary"
+            className="border border-purple-600 text-purple-600 hover:bg-purple-50 hover:cursor-pointer"
+          >
+            Contact us
+          </Button>
+        );
+      case "Tour":
+        return (
+          <Button
+            variant="secondary"
+            className="border border-primary hover:border-2 hover:cursor-pointer"
+          >
+            {" "}
+            Book Now
           </Button>
         );
       default:
@@ -116,15 +134,16 @@ export function FlexibleSheetDemo({ buttonType }: FlexibleSheetDemoProps) {
       <SheetContent className="w-full max-w-md mx-auto bg-white">
         <SheetHeader className="mb flex mt-8 ">
           <SheetTitle className="text-2xl font-bold text-gray-700 text-left ">
-          <h2 className="text-blue-950 font-bold text-4xl mb-4">
-            Interested in Our Tours and Travel Packages?
-          </h2> </SheetTitle>
+            <h2 className="text-blue-950 font-bold text-4xl mb-4">
+              Interested in Our Tours and Travel Packages?
+            </h2>{" "}
+          </SheetTitle>
           <SheetDescription>
-           
-          <p className="text-gray-600 text-sm font-base">
-            Let us help you choose the perfect travel experience! Share your details, and we'll get in touch with more information.
-          </p>
-           </SheetDescription>
+            <p className="text-gray-600 text-sm font-base">
+              Let us help you choose the perfect travel experience! Share your
+              details, and we&apos;ll get in touch with more information.
+            </p>
+          </SheetDescription>
         </SheetHeader>
 
         <div className="px-4 sm:px-6 lg:px-8">
@@ -188,7 +207,7 @@ export function FlexibleSheetDemo({ buttonType }: FlexibleSheetDemoProps) {
               <LoadingButton
                 type="submit"
                 loading={loading}
-                className="w-full bg-black hover:bg-blue-700 text-white py-6 text-lg items-center text-center font-semibold rounded-lg transition-colors duration-300"
+                className="w-full bg-primary hover:bg-primary/40 text-white py-6 text-lg items-center text-center font-semibold rounded-lg transition-colors duration-300"
               >
                 Get Connected
               </LoadingButton>
