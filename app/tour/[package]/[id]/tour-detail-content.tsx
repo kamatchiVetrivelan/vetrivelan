@@ -5,7 +5,7 @@ import InteractiveBentoGallery from "@/components/interactive-bento-gallery";
 import { TourTimeline } from "@/components/ui/timeline";
 import { FlexibleSheetDemo } from "@/components/flexible-sheet";
 import { Modal } from "@/components/ui/animated-modal";
-
+ 
 interface TourDetailClientProps {
   tourData: {
     title: string;
@@ -24,7 +24,7 @@ export default function TourDetailClient({
 }: TourDetailClientProps) {
   const shouldShowImages = packageName !== "Temple Tour Package";
   const imagesToDisplay = shouldShowImages ? tourData.detailImages : [];
-
+ 
   if (!tourData) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
@@ -44,8 +44,10 @@ export default function TourDetailClient({
 
   return (
     <section className="md:padding container pt-20 bg-black min-h-screen">
+      
       <div className="mx-auto px-4 md:px-10 py-8">
-        {/* Title and Description */}
+      
+         {/* Title and Description */}
         <div className="mt-4 flex justify-center flex-col text-center items-center">
           <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-red-500 to-red-700 text-transparent bg-clip-text mb-6">
             {tourData.title}

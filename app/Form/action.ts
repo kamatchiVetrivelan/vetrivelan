@@ -28,10 +28,10 @@ export async function sendEmail(data: EmailData) {
         <p>New form submission received:</p>
         <ul>cls
         
-          <li><strong>First Name:</strong> ${ Name}</li>
-           
-          <li><strong>Company:</strong> ${comment}</li>
-           <li><strong>Phone Number:</strong> ${PhoneNumber}</li>
+          <li><strong>  Name:</strong> ${ Name}</li>
+                      <li><strong>Phone Number:</strong> ${PhoneNumber}</li>
+
+          <li><strong>Comment:</strong> ${comment}</li>
         </ul>
       `,
     });

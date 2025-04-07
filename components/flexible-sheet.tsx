@@ -74,6 +74,7 @@ export function FlexibleSheetDemo({ buttonType }: FlexibleSheetDemoProps) {
       if (result.success) {
         toast(" Your message has been sent.", {
           description: "we will contact you soon",
+          className: "bg-primary text-white p-4 rounded-lg shadow-lg",
         });
         form.reset();
       } else {
