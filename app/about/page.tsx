@@ -15,7 +15,7 @@ const About = () => {
             About Vetri Velan Travels <span className="text-red-500">Coimbatore</span>
           </h1>
           <p className="text-xl text-gray-300 text-center max-w-4xl mx-auto mb-8">
-            Discover the story behind Coimbatore's most trusted travel agency and our commitment to creating unforgettable journeys for travelers across the region.
+            Discover the story behind Coimbatore&apos;s most trusted travel agency and our commitment to creating unforgettable journeys for travelers across the region.
           </p>
         </div>
         

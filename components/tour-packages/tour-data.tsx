@@ -171,7 +171,7 @@ export const tourPackagesData = {
           "/tp-places/munnar-4.jpeg",
           "/tp-places/munnar-6.jpg",
         ],
-        cription:
+        fullDescription:
           "Munnar, situated at the confluence of three mountain streams, is a picturesque hill station in Kerala's Western Ghats. Once a summer resort of the British government in South India, Munnar is famous for its vast expanse of tea plantations, pristine valleys, and cool mountain air. The hill station stands at 1,600 meters above sea level, offering breathtaking views and a pleasant climate throughout the year.",
         itinerary: [
           {
@@ -201,7 +201,7 @@ export const tourPackagesData = {
           "/tp-places/cochin-4.jpeg",
           "/tp-places/cochin-5.jpg",
         ],
-        escription:
+        fullDescription:
           "Cochin, a vibrant coastal city, blends colonial heritage, bustling markets, scenic backwaters, and rich cultural diversity.",
         itinerary: [
           {
@@ -280,7 +280,7 @@ export const tourPackagesData = {
         title: "Mysore",
         description:
           " Mysore is a royal city known for its grand palace, vibrant Dasara festival, silk sarees, and rich heritage.",
-        image: "/tp-features/mysore.jpg",
+        image: "/mysorepalaceh.jpg",
         detailImages: [
           "/tp-places/mysore-1.jpg",
           "/tp-places/mysore-2.jpg",
@@ -342,7 +342,7 @@ export const tourPackagesData = {
         title: "Bengaluru",
         description:
           "The Silicon Valley of India, is a tech hub with lively cafes, green parks, and a pleasant climate.",
-        image: "/tp-features/bangalore.jpeg",
+        image: "/bannerghatta.jpg",
         detailImages: [
           "/tp-places/bangalore-1.jpeg",
           "/tp-places/bangalore-2.jpeg",
@@ -406,7 +406,7 @@ export const tourPackagesData = {
         title: "Kodaikanal",
         description:
           "Kodaikanal, the Princess of Hill Stations, boasts misty valleys, serene lakes, lush forests, and breathtaking viewpoints.",
-        image: "/tp-features/kodai.jpg",
+        image: "/gunacave.jpg",
         detailImages: [
           "/tp-places/kodai-2.jpg",
           "/tp-places/kodai-3.jpeg",
@@ -842,7 +842,7 @@ export const tourPackagesData = {
         title: "Bengaluru & Mysore",
         description:
           "Discover royal Mysore and vibrant Bangalore through historical landmarks, scenic spots, and cultural wonders in this perfect South Indian tour.",
-        image: "/tp-places/mysore-1.jpg",
+        image: "/mysorepalaceh.jpg",
         detailImages: [
           "/tp-places/mysore-1.jpg",
           "/tp-places/mysore-2.jpg",
@@ -1015,7 +1015,7 @@ export const tourPackagesData = {
         title: "Palani & Madurai",
         description:
           "Experience spiritual bliss in Palani and explore Madurai’s rich heritage, Meenakshi Temple, vibrant culture, and ancient architecture in one trip.",
-        image: "/tp-features/comboTemple.jpeg",
+        image: "/tp-features/Temple.jpg",
         detailImages: [
           "/tp-places/MP-1.jpeg",
           "/tp-places/MP-2.jpeg",

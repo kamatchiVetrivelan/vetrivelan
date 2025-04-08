@@ -30,7 +30,7 @@ export default function TourHerosection() {
     },
     {
       title: "Temple Tour Package",
-      src: "/tp-hero/Temple.jpg",
+      src: "/tp-hero/comboTemple.jpeg",
       alt: "Temple tours",
     },
     {
@@ -40,7 +40,7 @@ export default function TourHerosection() {
     },
     {
       title: "Tamil Nadu Tour Package",
-      src: "/tp-hero/TamilNadu.jpg",
+      src: "/tp-places/thiru2.jpg",
       alt: "Tamil Nadu tourism",
     },
 
@@ -52,7 +52,7 @@ export default function TourHerosection() {
 
     {
       title: "Combo Tour Package",
-      src: "/tp-hero/combo.jpg",
+      src: "/mysorepalacev.jpg",
       alt: "Combo tour packages",
     },
   ];
@@ -83,7 +83,7 @@ export default function TourHerosection() {
                   alt={image.alt}
                   width={500}
                   height={400}
-                  className="rounded-xl h-full w-full object-cover border-b-4 rounded-tl-2xl rounded-tr-sm border-primary"
+                  className="rounded-xl h-full w-full object-cover border-b-4 rounded-tl-2xl rounded-tr-sm border-white"
                 />
               </div>
               <div className="h-12 sm:h-16 flex items-center justify-center">
@@ -95,8 +95,8 @@ export default function TourHerosection() {
                 onClick={() => handleViewDetails(image.title)}
                 className={`mt-2 py-1 sm:py-2 px-2 sm:px-4 rounded-md text-xs sm:text-sm transition duration-300 flex justify-center items-center gap-1 sm:gap-2 w-full ${
                   selectedPackage === image.title
-                    ? "bg-primary text-white border-b-4 rounded-b-xl border-blue-900"
-                    : "bg-blue-900 border-b-4 rounded-b-xl border-primary text-white"
+                    ? "bg-primary text-white border-b-4 rounded-b-xl border-primary"
+                    : "bg-white text-primary  border-b-4 rounded-b-xl border-primary hover:text-white"
                 }`}
               >
                 View Details

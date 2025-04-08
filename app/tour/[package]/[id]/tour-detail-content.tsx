@@ -54,7 +54,7 @@ export default function TourDetailClient({
 
         {/* Only render the gallery if we have images to display */}
         {imagesToDisplay.length > 0 && (
-          <div className="min-h-screen overflow-y-auto mb-12">
+          <div className="min-h-screen overflow-y-auto mb-12 bg-white rounded-2xl w-full  md:max-w-5xl 2xl:max-w-6xl mx-auto">
             <InteractiveBentoGallery
               images={imagesToDisplay}
               alt={tourData.title || "Tour Images"}
