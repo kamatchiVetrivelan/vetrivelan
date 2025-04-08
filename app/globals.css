@@ -76,8 +76,11 @@
 --foreground: hsl(0, 0%, 95%);
 --card: hsl(24, 9.8%, 10%);
 --card-foreground: hsl(0, 0%, 95%);
---popover: hsl(0, 0%, 9%);
---popover-foreground: hsl(0, 0%, 95%);
+/* --popover: hsl(0, 0%, 9%);
+--popover-foreground: hsl(0, 0%, 95%); */
+--popover: hsl(0, 100%, 50%); /* Red popover color */
+--popover-foreground: hsl(0, 0%, 100%); /* White foreground */
+
 --primary: hsl(346.8, 77.2%, 49.8%);
 --primary-foreground: hsl(355.7, 100%, 97.3%);
 --secondary: hsl(240, 3.7%, 15.9%);

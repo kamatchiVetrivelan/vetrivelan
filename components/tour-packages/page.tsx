@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { tourPackagesData } from "@/components/tour-packages/tour-data";
@@ -16,11 +16,39 @@ import {
 import { Lens } from "@/components/magicui/lens";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { FlexibleSheetDemo } from "../flexible-sheet";
+import { useSearchParams } from "next/navigation";
 
 export default function TourHerosection() {
-  const [selectedPackage, setSelectedPackage] = useState<string | null>(
-    "Tamil Nadu Tour Package"
-  );
+  const searchParams = useSearchParams();
+  
+  // Get the package from URL params or localStorage or default to Tamil Nadu
+  const getInitialPackage = () => {
+    // First check URL params
+    const paramPackage = searchParams.get("package");
+    if (paramPackage) {
+      return decodeURIComponent(paramPackage);
+    }
+    
+    // Then check localStorage
+    if (typeof window !== "undefined") {
+      const savedPackage = localStorage.getItem("selectedTourPackage");
+      if (savedPackage) {
+        return savedPackage;
+      }
+    }
+    
+    // Default to Tamil Nadu
+    return "Tamil Nadu Tour Package";
+  };
+  
+  const [selectedPackage, setSelectedPackage] = useState<string>(getInitialPackage());
+
+  // Update localStorage when package changes
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("selectedTourPackage", selectedPackage);
+    }
+  }, [selectedPackage]);
 
   const images = [
     {
@@ -43,13 +71,11 @@ export default function TourHerosection() {
       src: "/tp-places/thiru2.jpg",
       alt: "Tamil Nadu tourism",
     },
-
     {
       title: "Karnataka Tour Package",
       src: "/tp-hero/karnataka.jpeg",
       alt: "Karnataka Tour Package",
     },
-
     {
       title: "Combo Tour Package",
       src: "/mysorepalacev.jpg",
@@ -59,6 +85,7 @@ export default function TourHerosection() {
 
   const handleViewDetails = (packageTitle: string) => {
     setSelectedPackage(packageTitle);
+    
     // Scroll to the feature section
     setTimeout(() => {
       const featureSection = document.getElementById("feature-section");
@@ -68,16 +95,32 @@ export default function TourHerosection() {
     }, 100);
   };
 
+  // Verify the selected package exists in the data
+  useEffect(() => {
+    if (selectedPackage && !tourPackagesData[selectedPackage as keyof typeof tourPackagesData]) {
+      console.error(`Package data not found for: ${selectedPackage}`);
+      
+      // Find the first available package in the data
+      const availablePackage = Object.keys(tourPackagesData)[0];
+      if (availablePackage) {
+        setSelectedPackage(availablePackage);
+      }
+    }
+  }, [selectedPackage]);
+
+  // Check if the selected package exists in the data
+  const packageData = tourPackagesData[selectedPackage as keyof typeof tourPackagesData];
+
   return (
     <>
-      <div className="min-h-[300px] mx-auto bg-black  px-4 lg:px-12 pt-6 md:pt-10 relative">
-        <div className="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2  2xl:gap-4">
+      <div className="min-h-[300px] mx-auto bg-black px-4 lg:px-12 pt-6 md:pt-10 relative">
+        <div className="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 2xl:gap-4">
           {images.map((image, index) => (
             <div
               key={index}
               className="flex flex-col items-center justify-center text-center rounded-lg p-2 2xl:p-4 h-full"
             >
-              <div className="mb-2 sm:mb-4 w-full md:h-80  h-64 flex items-center justify-center">
+              <div className="mb-2 sm:mb-4 w-full md:h-80 h-64 flex items-center justify-center">
                 <Image
                   src={image.src}
                   alt={image.alt}
@@ -112,70 +155,63 @@ export default function TourHerosection() {
       </div>
 
       {/* Feature Section */}
-      {selectedPackage &&
-        tourPackagesData[selectedPackage as keyof typeof tourPackagesData] && (
-          <section id="feature-section" className="py-16 bg-black rounded-t-  ">
-            <div className="container mx-auto px-4 padding flex flex-col justify-center items-center ">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-blue-50 mb-4">
-                  {
-                    tourPackagesData[
-                      selectedPackage as keyof typeof tourPackagesData
-                    ]?.title
-                  }
-                </h2>
-                <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-                  {
-                    tourPackagesData[
-                      selectedPackage as keyof typeof tourPackagesData
-                    ]?.description
-                  }
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {tourPackagesData[
-                  selectedPackage as keyof typeof tourPackagesData
-                ].features.map((feature, index) => (
-                  <Card key={index} className="relative max-w-md shadow-none">
-                    <CardHeader>
-                      <Lens defaultPosition={{ x: 260, y: 150 }}>
-                        <Image
-                          src={feature.image || "/placeholder.svg"}
-                          alt={feature.title}
-                          width={500}
-                          height={200}
-                          className=" h-80 w-full object-cover  "
-                        />
-                      </Lens>{" "}
-                    </CardHeader>
-
-                    <CardContent>
-                      <CardTitle className="text-2xl font-bold text-blue-950 mb-2">
-                        {feature.title}
-                      </CardTitle>
-                      <CardDescription>{feature.description} </CardDescription>
-                    </CardContent>
-
-                    <CardFooter className="flex justify-between mt-4 bottom-0">
-                      <Button>
-                        <Link
-                          href={`/tour/${selectedPackage
-                            .replace(/\s+/g, "-")
-                            .toLowerCase()}/${feature.id}`}
-                          className=" "
-                        >
-                          View More
-                        </Link>{" "}
-                      </Button>
-                      <FlexibleSheetDemo buttonType={"Tour"} />
-                    </CardFooter>
-                  </Card>
-                ))}
-              </div>
+      {packageData ? (
+        <section id="feature-section" className="py-16 bg-black rounded-t-">
+          <div className="container mx-auto px-4 padding flex flex-col justify-center items-center">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-blue-50 mb-4">
+                {packageData.title}
+              </h2>
+              <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+                {packageData.description}
+              </p>
             </div>
-          </section>
-        )}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {packageData.features.map((feature, index) => (
+                <Card key={index} className="relative max-w-md shadow-none">
+                  <CardHeader>
+                    <Lens defaultPosition={{ x: 260, y: 150 }}>
+                      <Image
+                        src={feature.image || "/placeholder.svg"}
+                        alt={feature.title}
+                        width={500}
+                        height={200}
+                        className="h-80 w-full object-cover"
+                      />
+                    </Lens>
+                  </CardHeader>
+
+                  <CardContent>
+                    <CardTitle className="text-2xl font-bold text-blue-950 mb-2">
+                      {feature.title}
+                    </CardTitle>
+                    <CardDescription>{feature.description}</CardDescription>
+                  </CardContent>
+
+                  <CardFooter className="flex justify-between mt-4 bottom-0">
+                    <Button>
+                      <Link
+                        href={`/tour/${selectedPackage
+                          .replace(/\s+/g, "-")
+                          .toLowerCase()}/${feature.id}?fromPackage=${encodeURIComponent(selectedPackage)}`}
+                        className=""
+                      >
+                        View More
+                      </Link>
+                    </Button>
+                    <FlexibleSheetDemo buttonType={"Tour"} />
+                  </CardFooter>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : (
+        <div className="py-16 bg-black text-center text-white">
+          <p>Package data not found. Please select another package.</p>
+        </div>
+      )}
     </>
   );
 }
