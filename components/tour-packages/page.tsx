@@ -53,7 +53,7 @@ export default function TourHerosection() {
   const images = [
     {
       title: "Hill Station Tour Package",
-      src: "/tp-hero/Hill.jpeg",
+      src: "/tp-hero/hill.jpeg",
       alt: "Hill stations",
     },
     {
@@ -73,7 +73,7 @@ export default function TourHerosection() {
     },
     {
       title: "Karnataka Tour Package",
-      src: "/tp-hero/karnataka.jpeg",
+      src: "/tp-hero/Karnataka.jpeg",
       alt: "Karnataka Tour Package",
     },
     {
