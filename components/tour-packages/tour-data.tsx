@@ -98,6 +98,66 @@ export const tourPackagesData = {
         ],
       },
       {
+        id: "mudumalai",
+        title: "Mudumalai (Wildlife)",
+        description:
+          "Mudumalai is a rich wildlife sanctuary nestled in the Nilgiri hills, home to elephants, tigers, and diverse flora and fauna.",
+        image: "/tp-features/mudumalai.jpeg",
+        detailImages: [
+          "/tp-places/mudumalai-1.jpeg",
+          "/tp-places/mudumalai-2.jpeg",
+          "/tp-places/mudumalai-3.jpeg",
+          "/tp-places/mudumalai-4.jpeg",
+          "/tp-places/mudumalai-5.jpeg",
+          "/tp-places/mudumalai-6",
+        ],
+        fullDescription:
+          "Located at the tri-junction of Tamil Nadu, Kerala, and Karnataka, Mudumalai Wildlife Sanctuary is a part of the Nilgiri Biosphere Reserve. It's a haven for wildlife lovers and photographers, with chances to spot herds of elephants, deer, peacocks, and even leopards or tigers during safaris.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Wildlife Safari & Nature Trails",
+            description:
+              "Pickup and transfer to Mudumalai. Explore the sanctuary via jeep safari and enjoy nature walks. Visit Theppakadu Elephant Camp.",
+          },
+          {
+            day: "Day 2",
+            title: "Explore Surroundings & Return",
+            description:
+              "Optional early morning safari. Explore Moyar Falls and drive through forest route en route back.",
+          },
+        ],
+      },
+      {
+        id: "topslip",
+        title: "Topslip (Wildlife)",
+        description:
+          "Topslip, nestled within the Anamalai Tiger Reserve, offers quiet nature walks, elephant safaris, and rich forest experiences.",
+        image: "/tp-features/topslip.jpeg",
+        detailImages: [
+          "/tp-places/topslip-1.jpeg",
+          "/tp-places/topslip-2.jpeg",
+          "/tp-places/topslip-3.jpeg",
+          "/tp-places/topslip-4.jpeg",
+        ],
+        fullDescription:
+          "Topslip is a charming eco-tourism destination located in the Anamalai Hills of Tamil Nadu. It is part of the Anamalai Tiger Reserve and a peaceful spot for jungle treks, bird watching, and spotting wildlife like gaurs, langurs, and sometimes even elephants and tigers.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Forest Trek & Safari",
+            description:
+              "Travel to Topslip. Enjoy an elephant safari, visit the Forest Interpretation Centre, and go on a short guided trek.",
+          },
+          {
+            day: "Day 2",
+            title: "Morning Walk & Return",
+            description:
+              "Early morning nature walk or safari, followed by a relaxed return journey through scenic forest routes.",
+          },
+        ],
+      },
+      {
         id: "Rameswaram",
         title: "Rameswaram",
         description:
@@ -149,6 +209,37 @@ export const tourPackagesData = {
             title: "Tea Estates",
             description:
               "Balaji Temple, Sholayar Dam, Tea Estates, Cine View Points. Night drop at Coimbatore",
+          },
+        ],
+      },
+      {
+        id: "kanyakumari",
+        title: "Kanyakumari",
+        description:
+          "Kanyakumari, where the oceans meet, offers spiritual charm, cultural depth, and one of the most stunning sunrise and sunset views in India.",
+        image: "/tp-features/kanyakumari.jpeg",
+        detailImages: [
+          "/tp-places/kanyakumari-1.jpeg",
+          "/tp-places/kanyakumari-2.jpeg",
+          "/tp-places/kanyakumari-4.jpeg",
+          "/tp-places/kanyakumari-5.jpeg",
+          "/tp-places/kanyakumari-6.jpeg",
+          "/tp-places/kanyakumari-7.jpeg",
+        ],
+        fullDescription:
+          "Located at the southernmost tip of India, Kanyakumari is famous for its unique sunrise and sunset views over the confluence of the Arabian Sea, Bay of Bengal, and Indian Ocean. It is home to the iconic Vivekananda Rock Memorial, Thiruvalluvar Statue, ancient temples, and peaceful coastal vibes, making it a soulful destination for travelers.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Sightseeing in Kanyakumari",
+            description:
+              "Visit Vivekananda Rock Memorial, Thiruvalluvar Statue, Kanyakumari Temple, Gandhi Memorial, and enjoy sunset view at Sunset Point.",
+          },
+          {
+            day: "Day 2",
+            title: "Explore Nearby Attractions",
+            description:
+              "Check out Suchindram Temple, Vattakottai Fort, and relax at Kanyakumari Beach before heading back.",
           },
         ],
       },
@@ -270,11 +361,161 @@ export const tourPackagesData = {
           },
         ],
       },
+      {
+        id: "muthanga",
+        title: "Muthanga (Wildlife)",
+        description:
+          "Muthanga is part of Wayanad Wildlife Sanctuary, known for its elephant herds, thick forest cover, and thrilling jungle safaris.",
+        image: "/tp-features/muthanga.jpeg",
+        detailImages: [
+          "/tp-places/muthanga-1.jpeg",
+          "/tp-places/muthanga-2.jpeg",
+          "/tp-places/muthanga-3",
+          "/tp-places/muthanga-4.jpeg",
+          "/tp-places/muthanga-5.jpeg",
+        ],
+        fullDescription:
+          "Muthanga Wildlife Sanctuary, also known as Wayanad Wildlife Sanctuary, lies close to the Kerala-Karnataka border. It's a biodiversity hotspot where you can spot wild elephants, bison, deer, and sometimes leopards during jeep safaris through thick deciduous forests.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Wildlife Safari & Exploration",
+            description:
+              "Travel to Muthanga. Go on an evening jeep safari. Optional visit to nearby tribal villages or butterfly parks.",
+          },
+          {
+            day: "Day 2",
+            title: "Early Morning Safari",
+            description:
+              "Take an early morning safari, then visit nearby attractions like Soochipara Falls or Edakkal Caves before departure.",
+          },
+        ],
+      },
+      {
+        id: "thiruvananthapuram",
+        title: "Thiruvananthapuram",
+        description:
+          "Thiruvananthapuram, Kerala’s capital, is a blend of tradition and modernity, famed for its majestic temples, palaces, and beaches.",
+        image: "/tp-features/thiruvananthapuram.jpeg",
+        detailImages: [
+          "/tp-places/thiruvananthapuram-1.jpeg",
+          "/tp-places/thiruvananthapuram-2.jpeg",
+          "/tp-places/thiruvananthapuram-3.jpeg",
+          "/tp-places/thiruvananthapuram-4.jpeg",
+          "/tp-places/thiruvananthapuram-5.jpeg",
+        ],
+        fullDescription:
+          "Thiruvananthapuram, formerly Trivandrum, is a cultural hub featuring the iconic Padmanabhaswamy Temple, historic Napier Museum, and the scenic Kovalam Beach. The city balances Kerala’s royal legacy with spiritual vibrancy and serene coastlines.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Explore the City",
+            description:
+              "Padmanabhaswamy Temple, Napier Museum, Kuthiramalika Palace, and relax at Kovalam Beach.",
+          },
+          {
+            day: "Day 2",
+            title: "Leisure & Local Delights",
+            description:
+              "Visit Vizhinjam Lighthouse, spend time at Shankumugham Beach, and enjoy local street food.",
+          },
+        ],
+      },
+      {
+        id: "alappuzha",
+        title: "Alappuzha",
+        description:
+          "Alappuzha, the Venice of the East, is known for its iconic houseboat cruises, tranquil backwaters, and lush paddy fields.",
+        image: "/tp-features/alappuzha.jpeg",
+        detailImages: [
+          "/tp-places/alappuzha-1.jpeg",
+          "/tp-places/alappuzha-2.jpeg",
+          "/tp-places/alappuzha-3.jpeg",
+          "/tp-places/alappuzha-4.jpeg",
+          "/tp-places/alappuzha-5.jpeg",
+        ],
+        fullDescription:
+          "Alappuzha offers an unforgettable experience through its calm backwaters, traditional houseboats, and scenic landscapes. It’s also known for its snake boat races and coir industry.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Houseboat Experience",
+            description:
+              "Check into a houseboat, cruise through Punnamada Lake, explore village life and enjoy traditional Kerala meals onboard.",
+          },
+          {
+            day: "Day 2",
+            title: "Local Sights",
+            description:
+              "Visit Alappuzha Beach, Lighthouse, Revi Karunakaran Museum, and relax near Vembanad Lake.",
+          },
+        ],
+      },
+      {
+        id: "poovar",
+        title: "Poovar",
+        description:
+          "Poovar is a hidden paradise where river, lake, beach, and sea meet, offering golden sands and tranquil boat rides.",
+        image: "/tp-features/poovar.jpeg",
+        detailImages: [
+          "/tp-places/poovar-1.jpeg",
+          "/tp-places/poovar-2.jpeg",
+          "/tp-places/poovar-3.jpeg",
+          "/tp-places/poovar-4.jpeg",
+        ],
+        fullDescription:
+          "Poovar is a serene village with floating cottages, vibrant estuaries, and a quiet, untouched beach ideal for a peaceful escape. Its scenic boat rides through mangrove forests and coconut groves are a must.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Backwater Bliss",
+            description:
+              "Take a boat ride through Poovar backwaters, visit the golden sand beach, and enjoy traditional Kerala lunch at a riverside resort.",
+          },
+          {
+            day: "Day 2",
+            title: "Relaxation & Exploration",
+            description:
+              "Spend the morning at Poovar Beach, explore local culture and handicrafts before departure.",
+          },
+        ],
+      },
     ],
   },
   "Karnataka Tour Package": {
     title: "Karnataka Tour Package",
     features: [
+      {
+        id: "bandipur",
+        title: "Bandipur (Wildlife)",
+        description:
+          "Bandipur is a scenic tiger reserve in Karnataka, offering unforgettable safaris through lush forests and rich biodiversity.",
+        image: "/tp-features/bandipur.jpeg",
+        detailImages: [
+          "/tp-places/bandipur-1.jpeg",
+          "/tp-places/bandipur-2.jpeg",
+          "/tp-places/bandipur-3.jpg",
+          "/tp-places/bandipur-4.jpg",
+          "/tp-places/bandipur-5.jpeg",
+          "/tp-places/bandipur-6.jpeg",
+        ],
+        fullDescription:
+          "Bandipur National Park is part of the Nilgiri Biosphere Reserve and a former hunting ground of Mysore Maharajas. Now a well-preserved wildlife sanctuary, it is famous for Bengal tigers, elephants, sloth bears, and gaurs. It's one of India’s most beautiful forest stretches for safaris.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Arrival & Jungle Safari",
+            description:
+              "Arrive at Bandipur. Go for an evening jungle safari through Bandipur Tiger Reserve. Overnight at a jungle lodge.",
+          },
+          {
+            day: "Day 2",
+            title: "Morning Safari & Departure",
+            description:
+              "Start the day with a morning safari. Optional visit to Himavad Gopalaswamy Betta before returning.",
+          },
+        ],
+      },
       {
         id: "mysore",
         title: "Mysore",
@@ -363,6 +604,67 @@ export const tourPackagesData = {
             title: "Nandi Hills",
             description:
               "Explore ISKCON Temple, Nandi Hills (early morning for sunrise), Visvesvaraya Museum, and relax at UB City Mall or Commercial Street for shopping.",
+          },
+        ],
+      },
+      {
+        id: "kabini",
+        title: "Kabini",
+        description:
+          "Kabini is a serene wilderness escape, known for its rich wildlife, lush forests, and tranquil river views.",
+        image: "/tp-features/kabini.jpeg",
+        detailImages: [
+          "/tp-places/kabini-1.jpeg",
+          "/tp-places/kabini-2.jpeg",
+          "/tp-places/kabini-5.jpeg",
+          "/tp-places/kabini-4.jpeg",
+
+          "/tp-places/kabini-6.jpeg",
+          "/tp-places/kabini-7.jpeg",
+        ],
+        fullDescription:
+          "Kabini, located on the banks of the Kabini River, is one of South India's best wildlife destinations. Once a private hunting lodge for the Mysore Maharajas, it now offers luxurious jungle stays and thrilling safaris through Nagarhole National Park. Visitors can spot elephants, leopards, and even elusive tigers amidst the calm of nature.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Arrival & Jungle Safari",
+            description:
+              "Arrival at Kabini. Enjoy a boat safari or evening jeep safari in Nagarhole National Park. Overnight at resort.",
+          },
+          {
+            day: "Day 2",
+            title: "Morning Safari & Departure",
+            description:
+              "Early morning jungle safari followed by breakfast. Optional visit to Kabini Dam before departure.",
+          },
+        ],
+      },
+      {
+        id: "chikkamagaluru",
+        title: "Chikkamagaluru",
+        description:
+          "Chikkamagaluru is a dreamy hill station, famous for its coffee estates, misty mountains, and peaceful retreats.",
+        image: "/tp-features/chikkamagaluru.jpeg",
+        detailImages: [
+          "/tp-places/chikkamagaluru-5.jpeg",
+          "/tp-places/chikkamagaluru-2.jpeg",
+          "/tp-places/chikkamagaluru-3.jpeg",
+          "/tp-places/chikkamagaluru-4.jpeg",
+        ],
+        fullDescription:
+          "Nestled in the Western Ghats of Karnataka, Chikkamagaluru is often called the coffee land of India. The region is perfect for trekking, waterfall visits, and unwinding in nature's lap. With scenic hills like Mullayanagiri and tranquil spots like Hirekolale Lake, it's an idyllic escape from the city bustle.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Explore Nature & Coffee Trails",
+            description:
+              "Visit Mullayanagiri Peak, Coffee Museum, and enjoy a peaceful evening at Hirekolale Lake.",
+          },
+          {
+            day: "Day 2",
+            title: "Waterfalls & Local Culture",
+            description:
+              "Explore Hebbe Falls or Jhari Falls, and visit the Sharadamba Temple at Sringeri if time permits before heading back.",
           },
         ],
       },
@@ -777,6 +1079,96 @@ export const tourPackagesData = {
           },
         ],
       },
+      {
+        id: "thiruchendur",
+        title: "Thiruchendur",
+        description:
+          "Thiruchendur is a coastal temple town renowned for its ancient Murugan Temple by the sea, echoing with devotion and sea breeze.",
+        image: "/tp-features/thiruchendur.jpeg",
+        detailImages: [],
+        fullDescription:
+          "Thiruchendur offers spiritual solace through the majestic Subramanya Swamy Temple, set against the rhythmic waves of the Bay of Bengal.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "One Day Trip",
+            description:
+              "Depart to Thiruchendur, visit the Subramanya Swamy Temple, enjoy the coastal view, and return.",
+          },
+        ],
+      },
+      {
+        id: "thiruthani",
+        title: "Thiruthani",
+        description:
+          "Thiruthani is one of the Arupadai Veedu (six abodes) of Lord Murugan, perched on a serene hill with panoramic views.",
+        image: "/tp-features/thiruthani.jpeg",
+        detailImages: [],
+        fullDescription:
+          "Thiruthani is a peaceful pilgrimage site known for the sacred Thiruthani Murugan Temple, with steps leading to divine heights and tranquil blessings.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "One Day Trip",
+            description:
+              "Visit Thiruthani Murugan Temple, climb the holy steps, and experience the divine presence.",
+          },
+        ],
+      },
+      {
+        id: "thiruparankundram",
+        title: "Thiruparankundram",
+        description:
+          "Thiruparankundram is an ancient cave temple carved into a hill, deeply associated with Lord Murugan’s marriage to Deivanai.",
+        image: "/tp-features/thiruparankundram.jpeg",
+        detailImages: [],
+        fullDescription:
+          "Thiruparankundram is revered for its divine history, rock-cut architecture, and as one of the most sacred Murugan shrines in Tamil Nadu.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "One Day Trip",
+            description:
+              "Explore the Thiruparankundram Murugan Temple, witness the historic caves, and enjoy nearby views.",
+          },
+        ],
+      },
+      {
+        id: "palamuthircholai",
+        title: "Palamuthircholai",
+        description:
+          "Palamuthircholai is a lush forested Murugan shrine nestled in the hills, radiating peace, greenery, and divine charm.",
+        image: "/tp-features/palamuthircholai.jpeg",
+        detailImages: [],
+        fullDescription:
+          "Palamuthircholai is a divine grove where Lord Murugan blesses amidst dense foliage, the famed Naaval tree, and a natural spring.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "One Day Trip",
+            description:
+              "Visit the Palamuthircholai Murugan Temple, explore the sacred spring, and enjoy the forested hill ambiance.",
+          },
+        ],
+      },
+      {
+        id: "swamimalai",
+        title: "Swamimalai",
+        description:
+          "Swamimalai is a spiritual town where Lord Murugan is worshipped as a divine teacher, sharing sacred wisdom with Lord Shiva.",
+        image: "/tp-features/swamimalai",
+        detailImages: [],
+        fullDescription:
+          "Swamimalai Murugan Temple stands as a symbol of divine knowledge and faith, with steep steps leading to spiritual wisdom.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "One Day Trip",
+            description:
+              "Journey to Swamimalai, climb the sacred hill steps, and worship Lord Murugan as the source of divine knowledge.",
+          },
+        ],
+      },
     ],
   },
   "Combo Tour Package": {
@@ -834,6 +1226,61 @@ export const tourPackagesData = {
             title: "Rajamalai Wildlife Sanctuary",
             description:
               " transfer to Coimbatore en route visit Tea mesuem, Green Valley View, Sandal Wood Forest, Rajamalai Wildlife Sanctuary. ",
+          },
+        ],
+      },
+      {
+        id: "murugan-combo",
+        title: "Arupadai (Murugan Temples Combo)",
+        description:
+          "Embark on a sacred journey across the six abodes of Lord Murugan — a spiritual circuit blending devotion, legends, and divine energy.",
+        image: "/tp-features/murugan-combo.jpeg",
+        detailImages: [
+          "/tp-features/palani.jpeg",
+          "/tp-features/thiruthani.jpeg",
+          "/tp-features/thiruparankundram.jpeg",
+          "/tp-features/palamuthircholai.jpeg",
+          "/tp-features/thiruchendur.jpeg",
+          "/tp-features/swamimalai",
+        ],
+        fullDescription:
+          "The Arupadai Veedu tour covers the six most revered temples dedicated to Lord Murugan, scattered across Tamil Nadu. Each temple holds deep mythological importance and attracts devotees from all over the world, offering a serene spiritual experience and a glimpse into ancient Tamil culture.",
+        itinerary: [
+          {
+            day: "Day 1",
+            title: "Palani Murugan Temple",
+            description:
+              "Begin your journey at Palani, the most iconic Murugan hill temple. Visit Dhandayuthapani Swamy Temple, known for the divine idol made of Navapashanam.",
+          },
+          {
+            day: "Day 2",
+            title: "Swamimalai Murugan Temple",
+            description:
+              "Proceed to Swamimalai near Kumbakonam. This is where Lord Murugan explained the meaning of the sacred ‘Om’ to his father, Lord Shiva.",
+          },
+          {
+            day: "Day 3",
+            title: "Thiruchendur Murugan Temple",
+            description:
+              "Visit the coastal temple at Thiruchendur, where Lord Murugan defeated the demon Soorapadman. Enjoy the seashore and vibrant rituals.",
+          },
+          {
+            day: "Day 4",
+            title: "Thiruparankundram Murugan Temple",
+            description:
+              "Explore the rock-cut temple at Thiruparankundram near Madurai, the place where Murugan married Deivanai.",
+          },
+          {
+            day: "Day 5",
+            title: "Palamuthircholai Murugan Temple",
+            description:
+              "Visit Palamuthircholai, nestled in lush greenery. This forest temple is associated with Lord Murugan's wisdom and love for nature.",
+          },
+          {
+            day: "Day 6",
+            title: "Thiruthani Murugan Temple",
+            description:
+              "Complete your pilgrimage at Thiruthani, where Murugan married Valli. Located on a scenic hilltop, this temple offers spiritual calm and panoramic views.",
           },
         ],
       },

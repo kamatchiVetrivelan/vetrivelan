@@ -21,8 +21,8 @@ export async function sendEmail(data: EmailData) {
     } = data;
 
     const emailResponse = await resend.emails.send({
-      from: "manojkumar<onboarding@resend.dev>",
-      to: ["manomk9425@gmail.com"],
+      from: "vv<onboarding@resend.dev>",
+      to: ["vetrivelantravel@gmail.com"],
       subject: "New Form Submission",
       html: `
         <p>New form submission received:</p>

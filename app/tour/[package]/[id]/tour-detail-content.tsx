@@ -87,81 +87,74 @@ export default function TourDetailClient({
         <div className="flex flex-col lg:flex-row justify-between gap-8 px-4 md:px-10 mb-16">
           {/* Exclusions Section */}
           <div className="mb-12 lg:w-1/2 backdrop-blur-sm bg-gray-100 rounded-xl p-6 border border-red-900/30">
-            <h2 className="text-2xl font-bold text-red-500 mb-6 pb-2 border-b border-red-500/50">
-              Exclusions
-            </h2>
-            <ul className="space-y-4">
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Airfare and airport transfers</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Personal expenses and tips</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Travel insurance</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Optional activities not mentioned in the itinerary</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Camera fees at monuments</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Meals not specified in the itinerary</span>
-              </li>
-            </ul>
-          </div>
+  <h2 className="text-2xl font-bold text-red-500 mb-6 pb-2 border-b border-red-500/50">
+    Exclusions
+  </h2>
+  <ul className="space-y-4">
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Toll gate charges and parking fees</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Other state permit charges</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Other state entry taxes</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Hotel stay (unless mentioned in package)</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Driver food and accommodation</span>
+    </li>
+  </ul>
+</div>
 
-          {/* Terms and Conditions Section */}
-          <div className="mb-12 lg:w-1/2 backdrop-blur-sm bg-gray-100 rounded-xl p-6 border border-red-900/30">
-            <h2 className="text-2xl font-bold text-red-500 mb-6 pb-2 border-b border-red-500/50">
-              Terms and Conditions
-            </h2>
-            <ul className="space-y-4">
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Booking requires a 30% advance payment</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>
-                  Cancellation up to 30 days before departure: 90% refund
-                </span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Cancellation between 15-30 days: 50% refund</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Cancellation less than 15 days: No refund</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>
-                  The company reserves the right to change the itinerary due to
-                  unforeseen circumstances
-                </span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>Participants must have valid ID proof</span>
-              </li>
-              <li className="text-gray-700 flex items-start">
-                <span className="text-red-500 mr-2">•</span>
-                <span>
-                  The company is not responsible for any loss, injury, or damage
-                  to personal belongings
-                </span>
-              </li>
-            </ul>
-          </div>
+{/* Terms and Conditions Section */}
+<div className="mb-12 lg:w-1/2 backdrop-blur-sm bg-gray-100 rounded-xl p-6 border border-red-900/30">
+  <h2 className="text-2xl font-bold text-red-500 mb-6 pb-2 border-b border-red-500/50">
+    Terms and Conditions
+  </h2>
+  <ul className="space-y-4">
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Booking confirmation requires 10% advance payment</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Cancellation up to  15–30 days before departure: 100% refund</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Cancellation between 15 days: 90% refund</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Cancellation less than 2 days: No refund</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>The itinerary is subject to change due to unforeseen circumstances</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>All participants must carry valid ID proof</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>The company is not liable for any loss, injury, or damage to personal belongings</span>
+    </li>
+    <li className="text-gray-700 flex items-start">
+      <span className="text-red-500 mr-2">•</span>
+      <span>Participants are responsible for meeting basic health and travel requirements</span>
+    </li>
+  </ul>
+</div>
+
         </div>
       </div>
     </section>

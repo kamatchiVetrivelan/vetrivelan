@@ -1,6 +1,5 @@
 'use client'
-import Image from 'next/image';
-import React from 'react';
+ import React from 'react';
 
 const AboutHeroPage = () => {
   return (
@@ -20,23 +19,14 @@ const AboutHeroPage = () => {
           {/* Left Side - Quote */}
           <div className="bg-white/70 backdrop-blur-md p-6 rounded-xl shadow-lg">
             <blockquote className="text-2xl md:text-3xl lg:text-2xl font-serif italic text-gray-800 mb-4">
-              "Travel is the only thing you buy that makes you richer."
+              &quot;Travel is the only thing you buy that makes you richer.&quot;
             </blockquote>
             <p className="text-right text-lg font-semibold text-gray-600">
               - Anonymous
             </p>
           </div>
 
-          {/* Right Side - Image */}
-          {/* <div className="hidden md:block">
-            <Image
-              src="/Images/car.gif" 
-              alt="Travel" 
-              width={400}
-              height={500}
-              className="rounded-xl shadow-lg transform transition hover:scale-105 h-[450px]"
-            />
-          </div> */}
+         
         </div>
       </div>
     </div>

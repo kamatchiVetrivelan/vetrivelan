@@ -9,13 +9,13 @@ const Footer = () => {
           {/* Links appear first on mobile but second on desktop */}
           <div className="flex gap-6 md:order-2 text-sm">
             <Link 
-              href="@/components/terms" 
+              href="/terms" 
               className="text-white hover:underline"
             >
               Terms and Conditions
             </Link>
             <Link 
-              href="/components/privacy" 
+              href="/privacy" 
               className="text-white hover:underline"
             >
               Privacy Policy

@@ -163,7 +163,7 @@ export default function TourHerosection() {
                 {packageData.title}
               </h2>
               <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-                {packageData.description}
+                {"description" in packageData ? String(packageData.description) : " "}
               </p>
             </div>
 

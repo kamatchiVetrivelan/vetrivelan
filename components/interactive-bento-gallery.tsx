@@ -37,43 +37,46 @@ const MediaItem = ({ item, className, onClick }: { item: MediaItemType; classNam
       threshold: 0.1,
     }
 
+    const currentVideoRef = videoRef.current; // Store the ref value
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         setIsInView(entry.isIntersecting) // Set isInView to true if the video is in view
       })
     }, options)
 
-    if (videoRef.current) {
-      observer.observe(videoRef.current) // Start observing the video element
+    if (currentVideoRef) {
+      observer.observe(currentVideoRef) // Start observing the video element
     }
 
     return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current) // Clean up observer when component unmounts
+      if (currentVideoRef) {
+        observer.unobserve(currentVideoRef) // Clean up observer when component unmounts
       }
     }
   }, [])
   // Handle video play/pause based on whether the video is in view or not
   useEffect(() => {
     let mounted = true
+    const currentVideoRef = videoRef.current; // Store the ref value
 
     const handleVideoPlay = async () => {
-      if (!videoRef.current || !isInView || !mounted) return // Don't play if video is not in view or component is unmounted
+      if (!currentVideoRef || !isInView || !mounted) return // Don't play if video is not in view or component is unmounted
 
       try {
-        if (videoRef.current.readyState >= 3) {
+        if (currentVideoRef.readyState >= 3) {
           setIsBuffering(false)
-          await videoRef.current.play() // Play the video if it's ready
+          await currentVideoRef.play() // Play the video if it's ready
         } else {
           setIsBuffering(true)
           await new Promise((resolve) => {
-            if (videoRef.current) {
-              videoRef.current.oncanplay = resolve // Wait until the video can start playing
+            if (currentVideoRef) {
+              currentVideoRef.oncanplay = resolve // Wait until the video can start playing
             }
           })
           if (mounted) {
             setIsBuffering(false)
-            await videoRef.current.play()
+            await currentVideoRef.play()
           }
         }
       } catch (error) {
@@ -83,16 +86,16 @@ const MediaItem = ({ item, className, onClick }: { item: MediaItemType; classNam
 
     if (isInView) {
       handleVideoPlay()
-    } else if (videoRef.current) {
-      videoRef.current.pause()
+    } else if (currentVideoRef) {
+      currentVideoRef.pause()
     }
 
     return () => {
       mounted = false
-      if (videoRef.current) {
-        videoRef.current.pause()
-        videoRef.current.removeAttribute("src")
-        videoRef.current.load()
+      if (currentVideoRef) {
+        currentVideoRef.pause()
+        currentVideoRef.removeAttribute("src")
+        currentVideoRef.load()
       }
     }
   }, [isInView])
@@ -322,7 +325,7 @@ const convertImagesToMediaItems = (images: string[]): MediaItemType[] => {
     return {
       id: index + 1,
       type: isVideo ? "video" : "image",
-        url: url,
+      url: url,
       span: spanClass,
     }
   })
@@ -330,7 +333,7 @@ const convertImagesToMediaItems = (images: string[]): MediaItemType[] => {
 
 const InteractiveBentoGallery: React.FC<InteractiveBentoGalleryProps> = ({
   images,
-   }) => {
+}) => {
   // Convert the simple image URLs to MediaItemType objects
   const mediaItems = convertImagesToMediaItems(images)
 
@@ -433,4 +436,3 @@ const InteractiveBentoGallery: React.FC<InteractiveBentoGalleryProps> = ({
 }
 
 export default InteractiveBentoGallery
-

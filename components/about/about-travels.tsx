@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const AboutTravels = () => {
   return (
@@ -53,11 +55,11 @@ const AboutTravels = () => {
                 >
                   <h2 className="text-2xl font-bold mb-4 text-white">Our Journey in Coimbatore</h2>
                   <p className="mb-6 text-gray-300">
-                    Founded in 2009, Vetri Velan Travels has grown from a small local agency to Coimbatore's most trusted name in the travel industry. With over 15 years of experience, we've helped thousands of Coimbatore residents create unforgettable memories across the globe.
+                    Founded in 2009, Vetri Velan Travels has grown from a small local agency to Coimbatore&apos;s most trusted name in the travel industry. With over 15 years of experience, we&apos;ve helped thousands of Coimbatore residents create unforgettable memories across the globe.
                   </p>
                   
                   <p className="mb-6 text-gray-300">
-                    Our dedicated team of travel experts in Coimbatore is committed to providing exceptional service and creating personalized travel experiences that cater to your unique preferences. Whether you're planning a family vacation, a romantic getaway, or a corporate retreat, we're Coimbatore's top choice for memorable journeys.
+                    Our dedicated team of travel experts in Coimbatore is committed to providing exceptional service and creating personalized travel experiences that cater to your unique preferences. Whether you&apos;re planning a family vacation, a romantic getaway, or a corporate retreat, we&apos;re Coimbatore&apos;s top choice for memorable journeys.
                   </p>
                 </motion.div>
                 
@@ -68,12 +70,12 @@ const AboutTravels = () => {
                   viewport={{ once: true }}
                   className="flex flex-col sm:flex-row gap-4 mt-2"
                 >
-                  <button className="bg-red-600 text-white hover:bg-red-700 px-6 py-3 rounded-md font-medium transition-all duration-300">
-                    Contact Us
-                  </button>
-                  <button className="border border-red-500 text-red-500 hover:bg-red-900/20 px-6 py-3 rounded-md font-medium transition-all duration-300">
-                    View Our Packages
-                  </button>
+                   
+                  <Button variant="ghost" className="border border-red-500 text-red-500 hover:bg-red-900/20 hover:text-gray-200 px-6 py-3 rounded-md font-medium transition-all duration-300">
+                   <Link href={"/tourpackages"}>
+                   View Our Packages
+                   </Link> 
+                  </Button>
                 </motion.div>
               </div>
             </div>

@@ -1,10 +1,9 @@
-// pages/privacy-policy.js
-import Head from "next/head";
+ import Head from "next/head";
 import Link from "next/link";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl">
+    <div className="container mx-auto px-4 py-8 max-w-4xl pt-20 mt-10">
       <Head>
         <title>Privacy Policy | Vetrivelan Travels</title>
         <meta
@@ -16,8 +15,7 @@ export default function PrivacyPolicy() {
       <main className="prose prose-lg">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 
-        <p className="mb-4">Last Updated: April 8, 2025</p>
-
+ 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold mb-3">1. Introduction</h2>
           <p>
@@ -223,12 +221,12 @@ export default function PrivacyPolicy() {
             our data practices, please contact us at:
           </p>
           <p>Email: vetrivelantravel@gmail.com</p>
-          <p>Website: coimbatoretempotraveller.in</p>
+          <p>Phone number:9894692692</p>
         </section>
 
         <div className="mt-8 border-t pt-4">
           <Link
-            href="@/components/terms"
+            href="/terms"
             className="text-blue-600 hover:underline"
           >
             View our Terms and Conditions

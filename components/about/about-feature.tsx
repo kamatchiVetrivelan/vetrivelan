@@ -36,7 +36,7 @@ const AboutFeature = () => {
               <h2 className="text-2xl font-bold text-white">Our Vision</h2>
             </div>
             <p className="text-gray-300">
-              To be Coimbatore's leading travel agency known for creating transformative travel experiences that inspire and connect people with diverse cultures and landscapes. We envision making travel accessible and enriching for all Coimbatore residents.
+              To be Coimbatore&apos;s leading travel agency known for creating transformative travel experiences that inspire and connect people with diverse cultures and landscapes. We envision making travel accessible and enriching for all Coimbatore residents.
             </p>
             <ul className="mt-6 space-y-2 text-gray-300">
               <li className="flex items-start gap-2">
@@ -85,7 +85,7 @@ const AboutFeature = () => {
               <h2 className="text-2xl font-bold text-white">Our Mission</h2>
             </div>
             <p className="text-gray-300">
-              As Coimbatore's premier travel agency, our mission is to provide exceptional travel experiences that exceed expectations. We're dedicated to turning Coimbatore residents' travel dreams into reality while ensuring comfort, safety, and value.
+              As Coimbatore&apos;s premier travel agency, our mission is to provide exceptional travel experiences that exceed expectations. We&apos;re dedicated to turning Coimbatore residents&apos; travel dreams into reality while ensuring comfort, safety, and value.
             </p>
             <ul className="mt-6 space-y-2 text-gray-300">
               <li className="flex items-start gap-2">

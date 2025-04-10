@@ -37,9 +37,9 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold text-white mb-4">Why Choose Coimbatore's Premier Travel Agency</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Why Choose Coimbatore&apos;s Premier Travel Agency</h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            At Vetri Velan Travels, we pride ourselves on being Coimbatore's top choice for all your travel needs. Here's why travelers across Coimbatore trust us with their journeys.
+            At Vetri Velan Travels, we pride ourselves on being Coimbatore&apos;s top choice for all your travel needs. Here&apos;s why travelers across Coimbatore trust us with their journeys.
           </p>
         </motion.div>
 

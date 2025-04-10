@@ -3,7 +3,15 @@ import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { Star, Globe, Map, Users } from 'lucide-react';
 
-const AnimatedCounter = ({ end, duration = 3, prefix = '', suffix = '', isKFormat = false }) => {
+interface AnimatedCounterProps {
+  end: number;
+  duration?: number;
+  prefix?: string;
+  suffix?: string;
+  isKFormat?: boolean;
+}
+
+const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ end, duration = 3, prefix = '', suffix = '', isKFormat = false }) => {
   const [count, setCount] = useState(0);
   const controls = useAnimation();
   
@@ -89,7 +97,7 @@ const TravelMetrics = () => {
           viewport={{ once: true }}
           className="text-center text-3xl font-bold text-white mb-12"
         >
-          Coimbatore's Top Travel Agency by the Numbers
+          Coimbatore&apos;s Top Travel Agency by the Numbers
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-4">
           {metrics.map((metric, index) => (
